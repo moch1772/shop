@@ -29,3 +29,24 @@
     margin-left:90vw;
     margin-top:3vh;
 }
+.menu{
+    position: absolute;
+    width:50vw;
+    height:5vh;
+    margin-left:30vw;
+    margin-top:12.8vh;
+    background-color:white;
+    border-style: solid;
+    border-width: 0.1px 0.1px 0.1px 0.1px;
+    border-bottom-color: rgba(233, 233, 233, 0.753);
+}
+.loggain{
+    position: absolute;
+    margin-top:-2.7vh;
+    margin-left:1vw;
+    text-decoration: none;
+}
+.loggain hover{
+    position: absolute;
+    text-decoration: underline;
+}
