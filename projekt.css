@@ -27,17 +27,17 @@ body{
 .h2{
     background-color:#eee;
     display:block;
-    width:20%;
+    width:18vw;
     top:-91.8vh;
     position:relative;
     left:3%;
 }
 .produkter{
     height:100vh;
-    width:80%;
+    width:75vw;
     background-color:lightgray;
     position:relative;
     top:12vh;
-    left:23%;
+    left:46vh;
     outline-style: solid;
 }
