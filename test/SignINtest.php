@@ -21,7 +21,7 @@ session_start();
     $sql = new mysqli($servername,$username,$password,$database);
     function getSpecific($result,$whatTowrite){
         //Hämta specifik data från databas
-        while ($row = $result->fetch_assoc()) {
+        if ($row = $result->fetch_assoc()) {
         return $row[$whatTowrite];
         }}
 
@@ -35,11 +35,10 @@ session_start();
         $result = $sql->query($check);
     $numberCheck=getSpecific($result,'number');
 
+        //Trycking ny username and password
     if($numberCheck<1){
     $saveToLogin='INSERT INTO account(userName,password) VALUES("'.$userName.'","'.$pass.'");';
-    $saveToClub='INSERT INTO club(name) VALUES("'.$userName.'");';
     $result = $sql->query($saveToLogin);
-    $result = $sql->query($saveToClub);
     print("De lyckades");
 }
         else{
