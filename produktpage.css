@@ -2,10 +2,30 @@
     height:120vh;
     width:99vw;
     margin-left:-1vw;
-    margin-top:-1vh;
+    margin-top:-1.3vh;
 }
 .meny{
-    height:5%;
+    height:15%;
     width:100%;
-    background-color: dimgrey;
+    background-color: rgb(228, 228, 228);
+}
+.logga{
+    position: absolute;
+    margin-left:5vw;
+    margin-top:3vh;
+}
+.sokruta{
+    position: absolute;
+    margin-top:6vh;
+    margin-left:40vw;
+}
+.sok{
+    position: absolute;
+    width:40vw;
+    height:5vh;
+}
+.varukorg{
+    position: absolute;
+    margin-left:90vw;
+    margin-top:3vh;
 }
