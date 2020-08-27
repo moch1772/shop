@@ -1,6 +1,8 @@
 .content{
     height:120vh;
-    width:99.7vw;
+    width:99vw;
+    margin-left:-1vw;
+    margin-top:-1vh;
 }
 .meny{
     height:5%;
