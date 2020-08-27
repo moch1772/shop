@@ -7,6 +7,6 @@
     <link rel="stylesheet" href="TEST.css">
 </head>
 <body>
-        <a href="./reciveTEST.php?data=bacon&data2=Data120">Click here</a>
+        <a href="./reciveTEST.php?data=bacon&data2=RättSida">Click here</a>
 </body>
 </html>
