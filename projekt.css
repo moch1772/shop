@@ -4,6 +4,8 @@ body{
 }
 .menu{
     width:20%;
+    left:3%;
+    position:relative;
 }
 .menu a{
     background-color:#eee;
@@ -20,5 +22,10 @@ body{
     color:white;
 }
 .h2{
+    background-color:#eee;
     display:block;
+    width:20%;
+    top:20px;
+    position:relative;
+    left:3%;
 }
