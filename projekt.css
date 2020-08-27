@@ -2,12 +2,20 @@ body{
     height:100%;
     width:90%;
 }
-.test{
-    background-color:red;
-    position: relative;
-    left:5%;
+.menu{
+    width:20%;
 }
-.test2{
-    top:90%;
-    position: relative;
+.menu a{
+    background-color:#eee;
+    color:black;
+    display:block;
+    padding:12px;
+    text-decoration:none;
+}
+.menu a:hover{
+    background-color: #ccc;
+}
+.menu a:active{
+    background-color:blue;
+    color:white;
 }
