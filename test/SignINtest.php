@@ -21,7 +21,7 @@ session_start();
     $sql = new mysqli($servername,$username,$password,$database);
     function getSpecific($result,$whatTowrite){
         //Hämta specifik data från databas
-        while ($row = $result->fetch_assoc()) {
+        if ($row = $result->fetch_assoc()) {
         return $row[$whatTowrite];
         }}
 
