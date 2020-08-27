@@ -51,6 +51,12 @@ body{
 .topmenu a{
     text-decoration:none;
     font-size:22px;
+    color:black;
+    background-color:#eee;
+    display:block;
+}
+.topmenu hover{
+    background-color: #ccc;
 }
 .topmenu2{
     width:10vw;
@@ -62,6 +68,12 @@ body{
 .topmenu2 a{
     text-decoration:none;
     font-size:22px;
+    color:black;
+    background-color:#eee;
+    display:block;
+}
+.topmenu2 hover{
+    background-color: #ccc;
 }
 .topmenu3{
     width:10vw;
@@ -73,6 +85,12 @@ body{
 .topmenu3 a{
     text-decoration:none;
     font-size:22px;
+    color:black;
+    background-color:#eee;
+    display:block;
+}
+.topmenu3 hover{
+    background-color: #ccc;
 }
 .menubackground{
     width:75vw;
@@ -81,4 +99,6 @@ body{
     left:20.8vw;
     position:relative;
     outline-style:solid;
+    background-color:#eee;
+    z-index:-1;
 }
