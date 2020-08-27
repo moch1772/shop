@@ -5,6 +5,7 @@ body{
 .menu{
     width:20%;
     left:3%;
+    top:60px;
     position:relative;
 }
 .menu a{
@@ -25,7 +26,7 @@ body{
     background-color:#eee;
     display:block;
     width:20%;
-    top:20px;
+    top:80px;
     position:relative;
     left:3%;
 }
