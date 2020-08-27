@@ -31,10 +31,10 @@ session_start();
 
         //duplicate check
     $check="select COUNT(*) AS number from account where userName='".$userName."';";
-    //print($check);
+
         $result = $sql->query($check);
     $numberCheck=getSpecific($result,'number');
-    //print($numberCheck);
+
     if($numberCheck<1){
     $saveToLogin='INSERT INTO account(userName,password) VALUES("'.$userName.'","'.$pass.'");';
     $saveToClub='INSERT INTO club(name) VALUES("'.$userName.'");';
@@ -44,8 +44,8 @@ session_start();
 }
         else{
             print("Namn är taget");
+            header('refresh:3; url=signUptest.html');
         }
-    //header('refresh:3; url=hemsida.php');
     ?>
 </body>
 </html>
