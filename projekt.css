@@ -1,0 +1,13 @@
+body{
+    height:100%;
+    width:90%;
+}
+.test{
+    background-color:red;
+    position: relative;
+    left:5%;
+}
+.test2{
+    top:90%;
+    position: relative;
+}
