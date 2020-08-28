@@ -1,6 +1,6 @@
 .content{
     height:120vh;
-    width:99vw;
+    width:99.7vw;
     margin-left:-1vw;
     margin-top:-1.3vh;
 }
@@ -11,8 +11,11 @@
 }
 .logga{
     position: absolute;
-    margin-left:5vw;
-    margin-top:3vh;
+    margin-left:0%;
+    margin-top:1.2%;
+}
+.bild{
+    width:13%;
 }
 .sokruta{
     position: absolute;
@@ -28,6 +31,7 @@
     position: absolute;
     margin-left:90vw;
     margin-top:3vh;
+    font-size:100%;
 }
 .menu{
     position: absolute;
@@ -42,8 +46,8 @@
 }
 .loggain{
     position: absolute;
-    margin-top:-2.7vh;
-    margin-left:1vw;
+    margin-top:-0.7%;
+    margin-left:2%;
     text-decoration: none;
 }
 .loggain hover{
