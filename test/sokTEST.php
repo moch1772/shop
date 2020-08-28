@@ -10,6 +10,7 @@
         <?php
             //variabler jag använde
             $search;
+            $ingetSvarCheck=0;
             $sok=$_POST["sok"];
             $servername = "localhost";
             $username = "root";
@@ -24,10 +25,15 @@
               }
               //SQL komando
             $sql = "SELECT ID, product_ID, product_specifikation FROM specifikation where product_specifikation='$sok'";
-            
               //Aktivera SQL komando
             $findSpec = $mysqli->query($sql);
-              //Ifall det finns ett resultat från sql kommndot såskrives tabbelen ut
+
+            // Skriver SQL komando för att söka på produktens namn
+            $sql = "SELECT * FROM product where name='$sok'";
+            //Aktivera SQL komando
+          $findProductName = $mysqli->query($sql);
+
+              //Ifall det finns ett resultat från sql kommndot så skrives tabbelen ut (Söker efter produkt specifikation)
             if ($findSpec->num_rows > 0) {
                 // Hittar alla produkter med denna product_specifikation
                 while($row = $findSpec->fetch_assoc()) {
@@ -43,12 +49,23 @@
                          // Skriver ut data i rader
                             echo "<br> ID:". $row["ID"]. " - Name:". $row["name"]. " Pic name:" . $row["picture_name"] . " Price:". $row["price"]. " Info:". $row["info"] ."<br>";
                          }
-                    } else {
-                        echo "0 results";
                     }
-
-                }
-            } 
+                }   
+            } else{
+              $ingetSvarCheck++;
+            }
+            //Sök efter produkt namn
+          if ($findProductName->num_rows > 0) {
+              // Skriver ut data i fulla tabbeller
+              while($row = $findProductName->fetch_assoc()) {
+               // Skriver ut data i rader
+                  echo "<br> ID:". $row["ID"]. " - Name:". $row["name"]. " Pic name:" . $row["picture_name"] . " Price:". $row["price"]. " Info:". $row["info"] ."<br>";
+               }
+          } else {
+              if($ingetSvarCheck>0){
+                  echo "Inga results";
+              }
+            }
         ?>
          
 </body>
