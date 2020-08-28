@@ -21,6 +21,56 @@
     <div class="topmenu3"><a href="">Kontakta oss</a></div>
     </div>
     <div class="menubackground"></div>
+    <div class="slideshow">
+        <div class="slideshowimage">
+            <div class="numbertext">1 / 5</div>
+            <img src="">
+        </div>
+        <div class="slideshowimage">
+            <div class="numbertext">2 / 5</div>
+            <img src="">
+        </div>
+        <div class="slideshowimage">
+            <div class="numbertext">3 / 5</div>
+            <img src="">
+        </div>
+        <div class="slideshowimage">
+            <div class="numbertext">4 / 5</div>
+            <img src="">
+        </div>
+        <div class="slideshowimage">
+            <div class="numbertext">5 / 5</div>
+            <img src="">
+        </div>
+    </div>
+    <div class="dots">
+        <span class="dot"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+    </div>
+    <script>
+        var slideIndex = 0;
+        showSlides();
+
+        function showSlides() {
+            var i;
+            var slides = document.getElementByClassName("slideshowimage");
+            var dots = document.getElementsByClassName("dot");
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            slideIndex++;
+            if (slideIndex > slides.length) {slideIndex = 1}
+            for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace("active","");
+            }
+            slides[slideIndex-1].style.display = "block";
+            dots[slideIndex-1].classname += "active";
+            setTimeout(showSlides, 5000);
+        }
+    </script>
     <div class="produkter"></div>
     <h2 class="h2">Kategorier</h2>
     <div class="menu">
