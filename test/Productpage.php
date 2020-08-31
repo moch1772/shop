@@ -10,7 +10,7 @@
     <div class="content">
         <div class="meny">
             <div class="logga">
-                <img src="logga.png" class="bild">
+                <img src="img/logga.png" class="bild">
             </div>
             <div class="sokruta">
 
@@ -41,11 +41,6 @@
 
                 // Skapa kopling till server
                 $mysqli = new mysqli($servername,$username,$password,$database);
-            
-                if (!$mysqli) {
-                    die("Connection failed: " . mysqli_connect_error());
-                  }
-                  echo "Connected successfully";
                             ///Select * from product LIMIT 1;
                   //SQL komando
                 $sql = "SELECT ID, name, price, picture_name FROM product";
@@ -56,9 +51,8 @@
                     // Skriver ut data i fulla tabbeller
                     while($row = $result->fetch_assoc()) {
                         // Skriver ut data i rader
-                        echo   $row['picture_name'];
                         echo "<div class='lada'>
-                        <img src='".$row['picture_name']."' class='ruta'>
+                        <img src='img/".$row['picture_name']."' class='ruta'>
                         <div class='namn'>".$row['name']."</div>
                         <div class='pris'>".$row['price']."kr</div>
                     </div>";
