@@ -66,7 +66,6 @@
                                     <img src="img/'.$rowd['picture_name'].'" class="img">
                                     <div class="relateradHolder">
                                         <a href="produktinfo.php?filter='.$rowd['ID'].'" class="spelnamn">'.$rowd['name'].'</a>
-                                        
                                     </div>
                                     </div>';
                                 }
