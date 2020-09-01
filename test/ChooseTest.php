@@ -10,7 +10,7 @@
         <?php
             //variabler jag använde
             $search;
-            $filter=0;
+            $filter;
             $servername = "localhost";
             $username = "root";
             $password = "";
@@ -28,7 +28,6 @@
               {
                   $filter = $_GET["filter"];
               }
-              if($filter!=0){
 
                  //SQL komando
                 $sql = "SELECT ID, product_ID, product_specifikation FROM specifikation where product_specifikation='$filter'";
@@ -50,12 +49,13 @@
                          // Skriver ut data i rader
                             echo "<br> ID:". $row["ID"]. " - Name:". $row["name"]. " Pic name:" . $row["picture_name"] . " Price:". $row["price"]. " Info:". $row["info"] ."<br>";
                          }
-                      } 
+                      }
+                      
                     }
-                }
-              }else {
-                echo "Inget resultat";
-              }
+                }else {
+                  echo "Inget resultat";
+                } 
+              
         ?>
          
 </body>
