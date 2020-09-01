@@ -66,11 +66,13 @@
     min-height:1vh;
 }
 .lada{
+    color:black;
     width:13vw;
     float:left;
     height:40vh;
     margin-left:4vw;
     margin-top:7vh;
+    text-decoration: none;
     background-color: rgba(247, 247, 247, 0.863);
     transition: box-shadow 0.6s ease-in-out;
 }

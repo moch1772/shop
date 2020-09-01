@@ -51,11 +51,11 @@
                     // Skriver ut data i fulla tabbeller
                     while($row = $result->fetch_assoc()) {
                         // Skriver ut data i rader
-                        echo "<div class='lada'>
+                        echo "<a href='produktinfo.php?filter=".$row['ID']."' class='lada'>
                         <img src='img/".$row['picture_name']."' class='ruta'>
                         <div class='namn'>".$row['name']."</div>
                         <div class='pris'>".$row['price']."kr</div>
-                    </div>";
+                    </a>";
                     }
                 } else {
                     echo "0 results";
