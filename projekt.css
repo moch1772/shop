@@ -11,7 +11,7 @@ body{
 .menu{
     width:18vw;
     left:3%;
-    top:-147.2vh;
+    top:-146.2vh;
     position:relative;
 }
 .menu a{
@@ -35,18 +35,21 @@ body{
     background-color:rgb(255, 27, 27);
     display:block;
     width:18vw;
-    top:-145.6vh;
+    height:13vh;
+    top:-144.6vh;
     position:relative;
     left:3%;
     outline-style:solid;
     outline-width:1px;
+    line-height:225%;
+    padding-left:1%;
 }
 .produkter{
     height:79.8vh;
     width:75vw;
     background-color:lightgray;
     position:relative;
-    top:-59vh;
+    top:-58vh;
     left:20.8vw;
     outline-style: solid;
 }
@@ -54,7 +57,7 @@ body{
     width:10vw;
     height:5vh;
     left:31vw;
-    top:-24vh;
+    top:-23vh;
     position:relative;
 }
 .topmenu a{
@@ -68,7 +71,7 @@ body{
     width:10vw;
     height:5vh;
     left:53.5vw;
-    top:-29vh;
+    top:-28vh;
     position:relative;
 }
 .topmenu2 a{
@@ -82,7 +85,7 @@ body{
     width:10vw;
     height:5vh;
     left:75vw;
-    top:-34vh;
+    top:-33vh;
     position:relative;
 }
 .topmenu3 a{
@@ -95,7 +98,7 @@ body{
 .menubackground{
     width:75vw;
     height:5vh;
-    top:-39vh;
+    top:-38vh;
     left:20.8vw;
     position:relative;
     outline-style:solid;
@@ -104,14 +107,15 @@ body{
 }
 .top{
     width:93.4vw;
-    height:15vh;
+    height:14vh;
+    top:1vh;
     background-color:lightgray;
     position:relative;
     left:2.6vw;
 }
 .sokruta{
     position: absolute;
-    top:5vh;
+    top:6vh;
     left:40vw;
     z-index:1;
 }
@@ -122,13 +126,13 @@ body{
 }
 .logga{
     position:relative;
-    top:-14vh;
+    top:-12vh;
     left:3vw;
 }
 .varukorg{
     position:relative;
     left:88vw;
-    top:-27vh;
+    top:-25vh;
     width:5vw;
 }
 .slideshow{
@@ -136,6 +140,6 @@ body{
     height:20vh;
     z-index:2;
     left:20.8vw;
-    top:-39vh;
+    top:-38vh;
 }
 
