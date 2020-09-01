@@ -63,10 +63,9 @@
                             if($relaterade3->num_rows > 0){
                                 while($rowd = $relaterade3->fetch_assoc()) {
 
-                                    echo '<div class="objekt">
+                                    echo '<a href="produktinfo.php?filter="'.$rowd['ID'].'"" class="objekt">
                                     <img src="img/'.$rowd['picture_name'].'" class="img">
-                                    <div class="">'.$rowd['name'].'</div;
-                                    </div>';
+                                    </a>';
                                 }
                             }
                         }
