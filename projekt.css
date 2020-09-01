@@ -11,33 +11,38 @@ body{
 .menu{
     width:18vw;
     left:3%;
-    top:-168vh;
+    top:-147.2vh;
     position:relative;
 }
 .menu a{
-    background-color:#eee;
+    background-color:rgb(228, 0, 0);
     color:black;
     display:block;
     padding:12px;
     text-decoration:none;
+    outline-style:solid;
+    outline-width:1px;
 }
 .menu a:hover{
-    background-color: #ccc;
+    background-color: rgb(255, 94, 0);
+    color:black;
 }
 .menu a:active{
-    background-color:blue;
-    color:white;
+    background-color:rgb(255, 94, 0);
+    color:black;
 }
 .h2{
-    background-color:#eee;
+    background-color:rgb(255, 27, 27);
     display:block;
     width:18vw;
-    top:-166vh;
+    top:-145.6vh;
     position:relative;
     left:3%;
+    outline-style:solid;
+    outline-width:1px;
 }
 .produkter{
-    height:100vh;
+    height:79.8vh;
     width:75vw;
     background-color:lightgray;
     position:relative;
@@ -126,44 +131,11 @@ body{
     top:-27vh;
     width:5vw;
 }
-.dots{
-    text-align:center;
-}
 .slideshow{
-    max-width:50vw;
     position:relative;
     height:20vh;
     z-index:2;
-}
-.numbertext{
-    color:black;
-    font-size:10px;
-    padding:8px 12px;
-    position:absolute;
-}
-.dot{
-    height:15px;
-    width:15px;
-    margin:0 2px;
-    background-color:#bbb;
-    border-radius:50%;
-    display:inline-block;
-    transition:background-color 0.6s ease;
-}
-.active{
-    background-color:#717171;
-}
-.fade{
-    -webkit-animation-name:fade;
-    -webkit-animation-duration:1.5s;
-    animation-name:fade;
-    animation-duration:1.5s;
-}
-.slideshowimage{
-    display:none;
-}
-.slideshow{
-    left:21vw;
-    position:relative;
+    left:20.8vw;
     top:-39vh;
 }
+
