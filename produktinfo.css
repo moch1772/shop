@@ -8,6 +8,9 @@
     height:15%;
     width:100%;
     background-color: rgb(228, 228, 228);
+    border-style: solid;
+    border-width: 0px 0px 0.1px 0px;
+    border-bottom-color: rgba(182, 182, 182, 0.753);
 }
 .logga{
     position: absolute;
@@ -65,11 +68,18 @@
 .text{
     margin-left:1.9vw;
 }
+.relaterade{
+    width:15vw;
+    height:60vh;
+    margin-left:12.7vw;
+    margin-top:-46vh;
+    background-color: rgb(228, 228, 228);
+}
 .produktinfo{
     width:60vw;
     height:70vh;
     margin-left:30vw;
-    margin-top:-50vh;
+    margin-top:-62.3vh;
     background-color: rgb(228, 228, 228);
 }
 .prodnamn{
