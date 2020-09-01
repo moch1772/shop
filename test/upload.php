@@ -54,9 +54,10 @@ if ($uploadOk == 0) {
   if (move_uploaded_file($_FILES["fileToUpload"]["tmp_name"], $target_file)) {
     echo "The file ". basename( $_FILES["fileToUpload"]["name"]). " has been uploaded.";
     
-    $sql = "INSERT INTO product (name, price, picture_name, code, info)
-        VALUES ('".$_POST["productName"]."', ".$_POST["price"].", '".$imgName."', ".$_POST["code"].", '".$_POST["info"]."');";
+    $sql = "INSERT INTO product (name, price, picture_name, amount, info, players, age, time)
+        VALUES ('".$_POST["productName"]."', ".$_POST["price"].", '".$imgName."', ".$_POST["amount"].", '".$_POST["info"]."', '".$_POST["players"]."', ".$_POST["age"].", '".$_POST["time"]."');";
         $result=$mysqli->query($sql);
+        header('Location:Productpage.php');
 
 
 
