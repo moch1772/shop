@@ -58,3 +58,17 @@
 .kategorier{
     margin-left:1vw;
 }
+.produktinfo{
+    width:80vw;
+    height:80vh;
+    margin-left:19.7vw;
+    background-color: gray;
+}
+.prodnamn{
+
+}
+.img{
+    width:50%;
+    margin-left:-5vw;
+    margin-top:5vh;
+}
