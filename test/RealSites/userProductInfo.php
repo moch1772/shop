@@ -48,43 +48,7 @@
             {
                 $data = $_GET["filter"];
             }
-            if($data==null){
-                header('Location:Productpage.php');
-            }
-            $sql="select product_specifikation from specifikation where product_ID=$data;";
-            $relaterade=$mysqli-> query($sql);
-            if($relaterade->num_rows > 0){
-                while($row = $relaterade->fetch_assoc()) {
-
-                    $sql="select product_ID from specifikation where product_specifikation='".$row['product_specifikation']."' AND product_ID!=$data;";
-                    $relaterade2=$mysqli-> query($sql);
-                    if($relaterade2->num_rows > 0 ){
-                        while($rows = $relaterade2->fetch_assoc()) {
-
-                            $sql="select * from product where ID=".$rows['product_ID'].";";
-                            $relaterade3=$mysqli-> query($sql);
-                            if($relaterade3->num_rows > 0){
-                                while($rowd = $relaterade3->fetch_assoc()) {
-                                    echo '<div class="objekt">
-                                    <img src="img/'.$rowd['picture_name'].'" class="img">
-                                    <div class="relateradHolder">
-                                        <a href="produktinfo.php?filter='.$rowd['ID'].'" class="spelnamn">'.$rowd['name'].'</a>
-                                    </div>
-                                    </div>';
-                                }
-                            }
-                        }
-                    }
-                }
-            }else{
-                echo '<div class="">Detta spel är unikt</div>';
-            }
-
-
-
             
-            
-            echo '</div>';
 
 
         $sql = "SELECT * FROM product where ID=$data";
