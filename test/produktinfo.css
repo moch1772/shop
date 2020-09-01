@@ -8,6 +8,9 @@
     height:15%;
     width:100%;
     background-color: rgb(228, 228, 228);
+    border-style: solid;
+    border-width: 0px 0px 0.1px 0px;
+    border-bottom-color: rgba(182, 182, 182, 0.753);
 }
 .logga{
     position: absolute;
@@ -20,7 +23,7 @@
 .sokruta{
     position: absolute;
     margin-top:6vh;
-    margin-left:40vw;
+    margin-left:39.7vw;
 }
 .sok{
     position: absolute;
@@ -56,37 +59,61 @@
     width:5vw;
 }
 .kategorier{
-    margin-left:1vw;
+    width:10vw;
+    height:50vh;
+    margin-top:-2.2vh;
+    margin-left:0.5vw;
+    background-color: antiquewhite;
 }
-.produkter{
-    position: relative;
-    width:80%;
-    margin-left:19.9vw;
-    margin-top:-7.2vh;
-    min-height:1vh;
+.text{
+    margin-left:1.9vw;
 }
-.lada{
-    width:13vw;
-    float:left;
-    height:40vh;
-    margin-left:4vw;
-    margin-top:7vh;
-    background-color: rgba(247, 247, 247, 0.863);
+.relaterade{
+    width:15vw;
+    height:60vh;
+    margin-left:12.7vw;
+    margin-top:-46vh;
+}
+.reltext{
+    margin-left:3vw;
+}
+.objekt{
+    width:100%;
+    height:10vh;
+    margin-top:0.1vh;
+    background-color: rgb(228, 228, 228);
+    border-style: solid;
+    border-width: 0px 0px 0.1px 0px;
+    border-bottom-color: rgba(199, 199, 199, 0.753);
     transition: box-shadow 0.6s ease-in-out;
 }
-.lada:hover{
+.objekt:hover{
     box-shadow: 2px 2px 20px rgba(87, 87, 87, 0.747) ;
 }
-.ruta{
-    width:90%;
-    height:50%;
-    margin-left:0.68vw;
-    margin-top:1vh;
+.img{
+    width:5vw;
+    margin-top:2vh;
 }
-.namn{
-    margin-left:0.7vw;
+.produktinfo{
+    width:60vw;
+    height:70vh;
+    margin-left:30vw;
+    margin-top:-62.3vh;
+    background-color: rgb(228, 228, 228);
+}
+.prodnamn{
+    margin-left:1vw;
+}
+.img2{
+    width:20vw;
+}
+
+.text2{
+    width:30vw;
+    text-align: left;
+    margin-left:20vw;
+    margin-top:-50vh;
 }
 .pris{
-    margin-top:2vh;
-    margin-left:0.7vw;
+    margin-left:1vw;
 }
