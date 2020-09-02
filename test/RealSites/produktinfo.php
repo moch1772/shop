@@ -48,6 +48,9 @@
             {
                 $data = $_GET["filter"];
             }
+            if($data==null){
+                header('Location:Productpage.php');
+            }
             $sql="select product_specifikation from specifikation where product_ID=$data;";
             $relaterade=$mysqli-> query($sql);
             if($relaterade->num_rows > 0){
@@ -62,18 +65,20 @@
                             $relaterade3=$mysqli-> query($sql);
                             if($relaterade3->num_rows > 0){
                                 while($rowd = $relaterade3->fetch_assoc()) {
-
-                                    echo '<a href="produktinfo.php?filter="'.$rowd['ID'].'"" class="objekt">
+                                    echo '<div class="objekt">
                                     <img src="img/'.$rowd['picture_name'].'" class="img">
-                                    </a>';
+                                    <div class="relateradHolder">
+                                        <a href="produktinfo.php?filter='.$rowd['ID'].'" class="spelnamn">'.$rowd['name'].'</a>
+                                    </div>
+                                    </div>';
                                 }
                             }
                         }
-                    }else{
-                        echo '<div class="">Detta spel är unikt</div>';
                     }
+                }
+            }else{
+                echo '<div class="">Detta spel är unikt</div>';
             }
-        }
 
 
 

@@ -92,7 +92,19 @@
 }
 .img{
     width:5vw;
+    height:5vh;
     margin-top:2vh;
+}
+.spelnamn{
+    margin-left:5vw;
+    margin-top:-50%;
+    text-decoration:none;
+    color:black;
+    padding-left:10%;
+}
+.relateradHolder{
+    width:100%;
+    margin-top:-20%;
 }
 .produktinfo{
     width:60vw;
@@ -104,15 +116,27 @@
 .prodnamn{
     margin-left:1vw;
 }
-.img2{
+.bild2{
     width:20vw;
+    height:40vh;
 }
-
+.img2{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width:100%;
+    overflow:hidden;
+}
+.info{
+    width:70%;
+    height:50%;
+    margin-top:-40%;;
+}
 .text2{
     width:30vw;
     text-align: left;
     margin-left:20vw;
-    margin-top:-50vh;
+    margin-top:-30vh;
 }
 .pris{
     margin-left:1vw;

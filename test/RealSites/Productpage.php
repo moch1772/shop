@@ -14,8 +14,8 @@
             </div>
             <div class="sokruta">
 
-                <form action="" method="POST">
-                    <input class="sok" type="text" placeholder="Sök">
+                <form action="sok.php" method="POST">
+                    <input class="sok" type="text" name="sok" placeholder="Sök">
                 </form>
             </div>
             <div class="varukorg">
