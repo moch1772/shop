@@ -139,6 +139,7 @@ body{
     height:60px;
     width:60px;
     display:block;
+    position:relative;
 }
 .varukorgimage{
     height:60px;
@@ -155,5 +156,6 @@ body{
     font-size:30px;
     top:-34vh;
     left:20vw;
+    width:10vw;
 }
 
