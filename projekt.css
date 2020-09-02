@@ -47,14 +47,14 @@ body{
 .produkter{
     height:79.8vh;
     width:75vw;
-    background-color:lightgray;
+    background-color:#14a76c;
     position:relative;
     top:-66vh;
     left:20.8vw;
     outline-style: solid;
 }
 .topmenu{
-    width:10vw;
+    width:6.2vw;
     height:5vh;
     left:31vw;
     top:-30.7vh;
@@ -68,7 +68,7 @@ body{
     display:block;
 }
 .topmenu2{
-    width:10vw;
+    width:5.5vw;
     height:5vh;
     left:53.5vw;
     top:-35.7vh;
@@ -82,7 +82,7 @@ body{
     display:block;
 }
 .topmenu3{
-    width:10vw;
+    width:9.2vw;
     height:5vh;
     left:75vw;
     top:-40.7vh;
@@ -98,7 +98,7 @@ body{
 .menubackground{
     width:75vw;
     height:5vh;
-    top:-45.7vh;
+    top:-45.8vh;
     left:20.8vw;
     position:relative;
     outline-style:solid;
@@ -107,12 +107,14 @@ body{
     z-index:-1;
 }
 .top{
-    width:93.4vw;
+    width:93vw;
     height:14vh;
     top:1vh;
     background-color:#41b3a3;
     position:relative;
-    left:2.6vw;
+    left:2.75vw;
+    z-index:-2;
+    outline-style:solid;
 }
 .sokruta{
     position: absolute;
@@ -124,6 +126,8 @@ body{
     position: absolute;
     width:40vw;
     height:5vh;
+    outline-style:solid;
+    outline-width:1px;
 }
 .logga{
     position:relative;
@@ -148,8 +152,8 @@ body{
     position:relative;
     height:20vh;
     z-index:2;
-    left:20.8vw;
-    top:-46vh;
+    left:33vw;
+    top:-42vh;
 }
 .namn{
     position:relative;
@@ -158,4 +162,6 @@ body{
     left:20vw;
     width:10vw;
 }
-
+.mySlides{
+    outline-style:solid;
+}
