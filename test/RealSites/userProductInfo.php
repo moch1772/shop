@@ -71,8 +71,28 @@ $sql = "SELECT * FROM product where ID=$data";
             while($row = $result->fetch_assoc()) {
                 // Skriver ut data i rader
                 echo '
-                <form action="updateDATABASE" method="POST">
                     <div class="produktinfo">
+                    <div class="colume"> 
+                            ';
+                            $sql="SELECT * from specifikation where product_ID=$data";
+                            $result2 = $mysqli->query($sql);
+                            if ($result2->num_rows > 0) {
+                                // Skriver ut data i fulla tabbeller
+                                while($row2 = $result2->fetch_assoc()) {
+                                    // Skriver ut data i rader
+                                    echo' 
+                                        <div class="specifikationLista">
+                                            <div class="lista">
+                                                <div class="kategoriNamn">
+                                                <h3>'.$row2['product_specifikation'].'</h3></div>
+                                                        <a href="taBortKategori.php?kategori'.$row2['ID'].'"><button class="Tabort">Ta bort</button></a>
+                                            </div>
+                                        </div>
+                                        ';
+                                }
+                            }
+                            echo'</div>
+                    <form action="updateDATABASE" method="POST">
                         <div class="prodnamn">
                             <h1>'.$row['name'].'</h1>
                         </div>
@@ -85,7 +105,7 @@ $sql = "SELECT * FROM product where ID=$data";
                         <div class="info">
                             <div class="text2">
                                 <Label class="boldText">Info</Label>
-                                    <textarea name="info" placeholder="Information om product" rows="10" cols="30">'.$row['info'].'</textarea
+                                    <textarea name="info" placeholder="Information om product" rows="10" cols="50">'.$row['info'].'</textarea
                             </div>
                         </div>
                         <input class="Information" type="text" name="amount" value="'.$row['amount'].'" placeholder="Hur många eksemplar finns">Stycken kvar</br>
@@ -96,7 +116,11 @@ $sql = "SELECT * FROM product where ID=$data";
                             <input class="btn2" type="submit" Value="Submit">
                             </form>
                         </div>
-                    </div>';
+                    </div>
+                    
+                    
+                    
+                    ';
             }
         }
         ?>
