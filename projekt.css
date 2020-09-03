@@ -1,3 +1,7 @@
+@font-face{
+    font-family: text;
+    src:url(BalsamiqSans-Bold.ttf);
+}
 body{
     height:100vh;
     width:90vw;
@@ -7,37 +11,45 @@ body{
 .menu{
     width:18vw;
     left:3%;
-    top:-152.5vh;
+    top:-154vh;
     position:relative;
 }
 .menu a{
-    background-color:#eee;
+    background-color:#55bcc9;
     color:black;
     display:block;
     padding:12px;
     text-decoration:none;
+    outline-style:solid;
+    outline-width:1px;
 }
 .menu a:hover{
-    background-color: #ccc;
+    background-color: #97caef;
+    color:black;
 }
 .menu a:active{
-    background-color:blue;
-    color:white;
+    background-color:#97caef;
+    color:black;
 }
 .h2{
-    background-color:#eee;
+    background-color:#7395ae;
     display:block;
     width:18vw;
-    top:-149vh;
+    height:13vh;
+    top:-152.4vh;
     position:relative;
     left:3%;
+    outline-style:solid;
+    outline-width:1.5px;
+    line-height:225%;
+    padding-left:1%;
 }
 .produkter{
-    height:100vh;
+    height:79.8vh;
     width:75vw;
     background-color:lightgray;
     position:relative;
-    top:-40vh;
+    top:-66.1vh;
     left:20.8vw;
     outline-style: solid;
 }
@@ -45,64 +57,66 @@ body{
     width:10vw;
     height:5vh;
     left:31vw;
-    top:-25vh;
+    top:-30.5vh;
     position:relative;
 }
 .topmenu a{
     text-decoration:none;
-    font-size:22px;
+    font-size:18px;
     color:black;
-    background-color:#eee;
+    background-color:#85dcbb;
     display:block;
 }
 .topmenu2{
     width:10vw;
     height:5vh;
     left:53.5vw;
-    top:-30vh;
+    top:-35.5vh;
     position:relative;
 }
 .topmenu2 a{
     text-decoration:none;
-    font-size:22px;
+    font-size:18px;
     color:black;
-    background-color:#eee;
+    background-color:#85dcbb;
     display:block;
 }
 .topmenu3{
     width:10vw;
     height:5vh;
     left:75vw;
-    top:-35vh;
+    top:-40.5vh;
     position:relative;
 }
 .topmenu3 a{
     text-decoration:none;
-    font-size:22px;
+    font-size:18px;
     color:black;
-    background-color:#eee;
+    background-color:#85dcbb;
     display:block;
 }
 .menubackground{
     width:75vw;
     height:5vh;
-    top:-40.3vh;
+    top:-45.7vh;
     left:20.8vw;
     position:relative;
     outline-style:solid;
-    background-color:#eee;
+    outline-width:1.5px;
+    background-color:#85dcbb;
     z-index:-1;
 }
 .top{
     width:93.4vw;
-    height:15vh;
-    background-color:lightgray;
+    height:14vh;
+    top:1vh;
+    background-color:#41b3a3;
     position:relative;
     left:2.6vw;
 }
 .sokruta{
     position: absolute;
-    top:5vh;
+    top:6vh;
     left:40vw;
     z-index:1;
 }
@@ -113,12 +127,26 @@ body{
 }
 .logga{
     position:relative;
-    top:-14vh;
+    top:-12vh;
     left:3vw;
 }
 .varukorg{
     position:relative;
     left:88vw;
-    top:-27vh;
+    top:-25vh;
     width:5vw;
 }
+.slideshow{
+    position:relative;
+    height:20vh;
+    z-index:2;
+    left:20.8vw;
+    top:-46.1vh;
+}
+.namn{
+    position:relative;
+    font-size:30px;
+    top:-34vh;
+    left:20vw;
+}
+
