@@ -1,3 +1,7 @@
+<?php
+session_start();
+$_SESSION["Login"]=TRUE
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -23,7 +27,7 @@
             </div>
             <div class="menu">
                 <div class="buttons">
-                    <a class="loggain" href="Loggin.html"><h4>Logga in</h4></a>
+                    <a class="loggain" href="Loggin.php"><h4>Logga in</h4></a>
                 </div>
             </div>
         </div>
@@ -33,14 +37,13 @@
         </div>
         <div class="produkter">
             <?php
-                //variabler jag använde
-                $servername = "localhost";
-                $username = "root";
-                $password = "";
-                $database = "webshop";
-
-                // Skapa kopling till server
-                $mysqli = new mysqli($servername,$username,$password,$database);
+            $servername = "localhost";
+            $username = "root";
+            $password = "";
+            $database = "webshop";
+            
+            // Skapa kopling till server
+            $mysqli = new mysqli($servername,$username,$password,$database);
                             ///Select * from product LIMIT 1;
                   //SQL komando
                 $sql = "SELECT ID, name, price, picture_name FROM product";
@@ -51,7 +54,7 @@
                     // Skriver ut data i fulla tabbeller
                     while($row = $result->fetch_assoc()) {
                         // Skriver ut data i rader
-                        echo "<a href='produktinfo.php?filter=".$row['ID']."' class='lada'>
+                        echo "<a href='userProductInfo.php?filter=".$row['ID']."' class='lada'>
                         <img src='img/".$row['picture_name']."' class='ruta'>
                         <div class='namn'>".$row['name']."</div>
                         <div class='pris'>".$row['price']."kr</div>
