@@ -59,17 +59,17 @@
     width:5vw;
 }
 .varukorg2{
-    position: absolute;
+    position: relative;
     width:99.7vw;
-    height:60vh;
     background-color: rgb(241, 241, 241);
 }
+.tom{
+    height:1vh;
+}
 .lista{
-    position: relative;
     width:60vw;
-    height:10vh;
     margin-left:10vw;
-    margin-top:5vh;
+    margin-top:6vh;
     background-color: rgb(172, 172, 172);
 }
 .img{
@@ -104,21 +104,16 @@
 .btn:hover{
     cursor: pointer;
 }
-.button2{
-    margin-left:90vw;
-    margin-top:5vh;
-    width:5vw;
-    height:3vh;
+.buy2{
+    margin-left:55vw;
 }
-
 .btn2{
     width:5vw;
     height:3vh;
-    color:white;
     border-style:solid;
     border-width:0.1px 0.1px 0.1px 0.1px;
-    background-color:rgb(79, 134, 43);
-    border-radius: 5%;
+    background-color:rgb(224, 184, 184);
+    border-radius: 0%;
 
 }
 .btn2:hover{
