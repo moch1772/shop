@@ -59,17 +59,17 @@
     width:5vw;
 }
 .varukorg2{
-    position: absolute;
+    position: relative;
     width:99.7vw;
-    height:60vh;
     background-color: rgb(241, 241, 241);
 }
+.tom{
+    height:1vh;
+}
 .lista{
-    position: relative;
     width:60vw;
-    height:10vh;
     margin-left:10vw;
-    margin-top:5vh;
+    margin-top:6vh;
     background-color: rgb(172, 172, 172);
 }
 .img{
