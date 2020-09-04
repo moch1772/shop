@@ -102,11 +102,13 @@
     text-decoration:none;
     color:black;
     padding-left:10%;
+    z-index: 10;
 }
 .relateradHolder{
     width:100%;
-    margin-top:-20%;
-    font-size:0%;
+    font-size:100%;
+    margin-top:30%;
+    text-decoration:none ;
 }
 .produktinfo{
     width:60vw;

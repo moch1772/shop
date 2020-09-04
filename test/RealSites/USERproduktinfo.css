@@ -108,7 +108,7 @@
 }
 .produktinfo{
     width:80vw;
-    height:70%;
+    height:70vh;
     margin-left:18vw;
     margin-top:-80vh;
     background-color: rgb(228, 228, 228);
@@ -128,9 +128,9 @@
     overflow:hidden;
 }
 .info{
-    width:70%;
+    width:100%;
     height:50%;
-    margin-top:30%;
+    margin-top:50%;
 }
 .text2{
     width:30vw;
@@ -161,24 +161,46 @@
     font-size:100%;
     transition: 0.5s ease-in-out;
     float:right;
+    
 }
 .btn2:hover{
     cursor: pointer;
     background-color:rgba(79, 134, 43, 0.507);
 }
-#Tabort{
-    position: absolute;
+.Tabort{
+    position:relative;
+    color:white;
     background-color:rgb(134, 43, 43);
     transition: 0.5s ease-in-out;
-    margin-left:0%;
+    margin-top:-13%;
+    float:right;
     height:5%;
 }
-#Tabort:hover{
+.Tabort:hover{
     cursor: pointer;
     background-color:rgba(134, 43, 43, 0.507);
 }
+.kategoriNamn{
+    width:50%;
+}
 .buttonHolder{
-    width:78%;
+    width:65%;
     height:15vh;
     margin-top:auto;
 }
+.colume{
+    float:right;
+    width:15%;
+}
+.specifikationLista{
+    width:100%;
+    border-color:black;
+    border-radius: 5%;
+    border-width: 1px;
+    border-style: solid;
+    float: right;
+    margin-top:3%;
+}
+.lista{
+    height:10%;
+}   
