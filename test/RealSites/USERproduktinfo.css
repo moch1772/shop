@@ -1,12 +1,12 @@
 .content{
-    height:120vh;
+    height:99vh;
     width:99.7vw;
     margin-left:-1vw;
     margin-top:-1.3vh;
 }
 .meny{
-    height:15%;
-    width:100%;
+    height:18%;
+    width:99.5%;
     background-color: rgb(228, 228, 228);
     border-style: solid;
     border-width: 0px 0px 0.1px 0px;
@@ -59,7 +59,7 @@
     width:5vw;
 }
 .kategorier{
-    width:10vw;
+    width:18vw;
     height:50vh;
     margin-top:-2.2vh;
     margin-left:0.5vw;
@@ -73,7 +73,6 @@
     height:60vh;
     margin-left:12.7vw;
     margin-top:-46vh;
-    font-size:2vh;
 }
 .reltext{
     margin-left:3vw;
@@ -106,13 +105,12 @@
 .relateradHolder{
     width:100%;
     margin-top:-20%;
-    font-size:0%;
 }
 .produktinfo{
-    width:60vw;
-    height:70vh;
-    margin-left:30vw;
-    margin-top:-62.3vh;
+    width:80vw;
+    height:70%;
+    margin-left:18vw;
+    margin-top:-80vh;
     background-color: rgb(228, 228, 228);
 }
 .prodnamn{
@@ -132,14 +130,55 @@
 .info{
     width:70%;
     height:50%;
-    margin-top:-40%;;
+    margin-top:30%;
 }
 .text2{
     width:30vw;
     text-align: left;
     margin-left:20vw;
-    margin-top:-30vh;
+    margin-top:-80%;
 }
 .pris{
     margin-left:1vw;
+    margin-top:2vh;
+}
+.Information{
+    margin-left:20vw;
+    width:33%;
+}
+.boldText{
+    font-weight: bold;
+}
+
+.btn2{
+    width:15%;
+    height:30%;
+    color:white;
+    border-style:solid;
+    border-width:0.1px 0.1px 0.1px 0.1px;
+    background-color:rgb(79, 134, 43);
+    border-radius: 5%;
+    font-size:100%;
+    transition: 0.5s ease-in-out;
+    float:right;
+}
+.btn2:hover{
+    cursor: pointer;
+    background-color:rgba(79, 134, 43, 0.507);
+}
+#Tabort{
+    position: absolute;
+    background-color:rgb(134, 43, 43);
+    transition: 0.5s ease-in-out;
+    margin-left:0%;
+    height:5%;
+}
+#Tabort:hover{
+    cursor: pointer;
+    background-color:rgba(134, 43, 43, 0.507);
+}
+.buttonHolder{
+    width:78%;
+    height:15vh;
+    margin-top:auto;
 }

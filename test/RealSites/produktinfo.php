@@ -23,7 +23,7 @@
             </div>
             <div class="menu">
                 <div class="buttons">
-                    <a class="loggain" href=""><h4>Logga in</h4></a>
+                    <a class="loggain" href="Loggin.php"><h4>Logga in</h4></a>
                 </div>
             </div>
         </div>
