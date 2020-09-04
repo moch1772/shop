@@ -11,7 +11,7 @@ body{
 .menu{
     width:18vw;
     left:3%;
-    top:-154vh;
+    top:-161.6vh;
     position:relative;
 }
 .menu a{
@@ -36,7 +36,7 @@ body{
     display:block;
     width:18vw;
     height:13vh;
-    top:-152.4vh;
+    top:-160.1vh;
     position:relative;
     left:3%;
     outline-style:solid;
@@ -49,7 +49,7 @@ body{
     width:75vw;
     background-color:#14a76c;
     position:relative;
-    top:-66vh;
+    top:-73.5vh;
     left:20.8vw;
     outline-style: solid;
 }
@@ -153,7 +153,7 @@ body{
     height:20vh;
     z-index:2;
     left:33vw;
-    top:-42vh;
+    top:-33vh;
 }
 .namn{
     position:relative;
@@ -164,4 +164,12 @@ body{
 }
 .mySlides{
     outline-style:solid;
+}
+.text{
+    font-size:30px;
+    position:relative;
+    top:-64vh;
+    left:49vw;
+    z-index:3;
+    color:white;
 }
