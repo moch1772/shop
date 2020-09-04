@@ -73,6 +73,7 @@
     height:60vh;
     margin-left:12.7vw;
     margin-top:-46vh;
+    font-size:2vh;
 }
 .reltext{
     margin-left:3vw;
@@ -92,11 +93,22 @@
 }
 .img{
     width:5vw;
+    height:5vh;
     margin-top:2vh;
 }
 .spelnamn{
     margin-left:5vw;
-    margin-top:-4vh;
+    margin-top:-50%;
+    text-decoration:none;
+    color:black;
+    padding-left:10%;
+    z-index: 10;
+}
+.relateradHolder{
+    width:100%;
+    font-size:100%;
+    margin-top:30%;
+    text-decoration:none ;
 }
 .produktinfo{
     width:60vw;
@@ -108,16 +120,26 @@
 .prodnamn{
     margin-left:1vw;
 }
-.img2{
-    width:50%;
-    margin-left:-5vw;
-    margin-top:5vh;
+.bild2{
+    width:20vw;
+    height:40vh;
 }
-
+.img2{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width:100%;
+    overflow:hidden;
+}
+.info{
+    width:70%;
+    height:50%;
+    margin-top:-40%;;
+}
 .text2{
     width:30vw;
     text-align: left;
-    margin-left:30vw;
+    margin-left:20vw;
     margin-top:-30vh;
 }
 .pris{

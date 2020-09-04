@@ -5,13 +5,62 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="projekt.css">
+    <meta content="text/html; charset=iso-8859-2" http-equiv="Content-Type">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <style>
+    .mySlides {display:none;}
+    </style>
 </head>
 <body>
-    <h2>Kategorier</h2>
+    <div class="top"></div>
+    <div class="sokruta">
+        <form action="" method="POST">
+            <input class="sok" type="text" placeholder="Sök">
+        </form>
+    </div>
+    <div class="logga"><a href="mainpage.html"> <img src="logga.png" height="80px"></a></div>
+    <div class="varukorg"><a href=""><img src="varukorg.png" class="varukorgimage"></a></div>
+    <div class="namn">Brädspel</div>
+    <div class="buttons">
+    <div class="topmenu"><a href="">Logga in</a></div>
+    <div class="topmenu2"><a href="">Om oss</a></div>
+    <div class="topmenu3"><a href="">Kontakta oss</a></div>
+    </div>
+    <div class="menubackground"></div>
+    <div class="slideshow" style="max-width:50vw">
+        <img class="mySlides" src="test.jpg" style="width:100%; height:60vh;">
+        <img class="mySlides" src="test2.jpg" style="width:100%; height:60vh;">
+        <img class="mySlides" src="test3.jpg" style="width:100%; height:60vh;">
+      </div>
+      <script>
+        var myIndex = 0;
+        carousel();
+        
+        function carousel() {
+          var i;
+          var x = document.getElementsByClassName("mySlides");
+          for (i = 0; i < x.length; i++) {
+            x[i].style.display = "none";  
+          }
+          myIndex++;
+          if (myIndex > x.length) {myIndex = 1}    
+          x[myIndex-1].style.display = "block";  
+          setTimeout(carousel, 5000);
+        }
+        </script>
+    <div class="text">Lorem Ipsum</div>
+    <div class="produkter"></div>
+    <h2 class="h2">Kategorier</h2>
     <div class="menu">
-        <a href="" class="active">DnD</a>
+        <a href="">Alla Brädspel</a>
+        <a href="">Dungeons and Dragons</a>
         <a href="">Magic the Gathering</a>
-        <a href="">Brädspel</a>
+        <a href="">Kortspel</a>
+        <a href="">Pussel</a>
+        <a href="">Familjespel</a>
+        <a href="">Barnspel</a>
+        <a href="">Vuxenspel</a>
+        <a href="">Strategispel</a>
     </div>
 </body>
 </html>
