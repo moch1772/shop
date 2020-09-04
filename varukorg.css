@@ -1,11 +1,11 @@
 .content{
-    height:120vh;
+    height:100vh;
     width:99.7vw;
     margin-left:-1vw;
     margin-top:-1.3vh;
 }
 .meny{
-    height:15%;
+    height:18%;
     width:100%;
     background-color: rgb(228, 228, 228);
     border-style: solid;
@@ -22,7 +22,7 @@
 }
 .sokruta{
     position: absolute;
-    margin-top:6vh;
+    margin-top:7vh;
     margin-left:39.7vw;
 }
 .sok{
@@ -41,7 +41,7 @@
     width:50vw;
     height:5vh;
     margin-left:30vw;
-    margin-top:12.7vh;
+    margin-top:12.9vh;
     background-color:white;
     border-style: solid;
     border-width: 0.1px 0.1px 0.1px 0.1px;
@@ -58,9 +58,24 @@
     text-decoration: underline;
     width:5vw;
 }
+ul.breadcrumbs{
+    list-style:none;
+}
+ul.breadcrumbs li{
+    float:left;
+    display: inline;
+    
+}
+ul.breadcrumbs li+li:before{
+    padding:4px;
+    color:black;
+    content: ">";
+
+}
 .varukorg2{
     position: relative;
     width:99.7vw;
+    margin-top:5vh;
     background-color: rgb(241, 241, 241);
 }
 .tom{
@@ -86,7 +101,7 @@
 }
 .button{
     margin-left:90vw;
-    margin-top:5vh;
+    margin-top:2vh;
     width:5vw;
     height:3vh;
     background-color: aquamarine;
@@ -118,4 +133,7 @@
 }
 .btn2:hover{
     cursor: pointer;
+}
+.tom2{
+    height:5vh;
 }
