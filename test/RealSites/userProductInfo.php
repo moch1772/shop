@@ -85,7 +85,7 @@ $sql = "SELECT * FROM product where ID=$data";
                                             <div class="lista">
                                                 <div class="kategoriNamn">
                                                 <h3>'.$row2['product_specifikation'].'</h3></div>
-                                                        <a href="taBortKategori.php?kategori'.$row2['ID'].'"><button class="Tabort">Ta bort</button></a>
+                                                        <a href="tabort/taBortKategori.php?kategori='.$row2['ID'].'"><button class="Tabort">Ta bort</button></a>
                                             </div>
                                         </div>
                                         ';

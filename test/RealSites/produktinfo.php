@@ -65,12 +65,15 @@
                             $relaterade3=$mysqli-> query($sql);
                             if($relaterade3->num_rows > 0){
                                 while($rowd = $relaterade3->fetch_assoc()) {
-                                    echo '<div class="objekt">
+                                    echo '
+                                    <a href="produktinfo.php?filter='.$rowd['ID'].'">
+                                    <div class="objekt">
                                     <img src="img/'.$rowd['picture_name'].'" class="img">
                                     <div class="relateradHolder">
-                                        <a href="produktinfo.php?filter='.$rowd['ID'].'" class="spelnamn">'.$rowd['name'].'</a>
+                                        <div class="spelnamn">'.$rowd['name'].'</div>
                                     </div>
-                                    </div>';
+                                    </div>
+                                    </a>';
                                 }
                             }
                         }
