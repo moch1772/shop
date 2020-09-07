@@ -1,0 +1,231 @@
+.content{
+    height:99vh;
+    width:99.7vw;
+    margin-left:-1vw;
+    margin-top:-1.3vh;
+}
+.meny{
+    height:18%;
+    width:99.5%;
+    background-color: rgb(228, 228, 228);
+    border-style: solid;
+    border-width: 0px 0px 0.1px 0px;
+    border-bottom-color: rgba(182, 182, 182, 0.753);
+}
+.logga{
+    position: absolute;
+    margin-left:0%;
+    margin-top:1.2%;
+}
+.bild{
+    width:13%;
+}
+.sokruta{
+    position: absolute;
+    margin-top:6vh;
+    margin-left:39.7vw;
+}
+.sok{
+    position: absolute;
+    width:40vw;
+    height:5vh;
+}
+.varukorg{
+    position: absolute;
+    margin-left:90vw;
+    margin-top:5vh;
+    font-size:100%;
+}
+.menu{
+    position: absolute;
+    width:50vw;
+    height:5vh;
+    margin-left:30vw;
+    margin-top:12.7vh;
+    background-color:white;
+    border-style: solid;
+    border-width: 0.1px 0.1px 0.1px 0.1px;
+    border-bottom-color: rgba(233, 233, 233, 0.753);
+}
+.loggain{
+    position: absolute;
+    margin-top:-0.7%;
+    margin-left:2%;
+    text-decoration: none;
+}
+.loggain :hover{
+    position: absolute;
+    text-decoration: underline;
+    width:5vw;
+}
+.kategorier{
+    width:18vw;
+    height:50vh;
+    margin-top:-2.2vh;
+    margin-left:0.5vw;
+    background-color: antiquewhite;
+}
+.text{
+    margin-left:1.9vw;
+}
+.relaterade{
+    width:15vw;
+    height:60vh;
+    margin-left:12.7vw;
+    margin-top:-46vh;
+}
+.reltext{
+    margin-left:3vw;
+}
+.objekt{
+    width:100%;
+    height:10vh;
+    margin-top:0.1vh;
+    background-color: rgb(228, 228, 228);
+    border-style: solid;
+    border-width: 0px 0px 0.1px 0px;
+    border-bottom-color: rgba(199, 199, 199, 0.753);
+    transition: box-shadow 0.6s ease-in-out;
+}
+.objekt:hover{
+    box-shadow: 2px 2px 20px rgba(87, 87, 87, 0.747) ;
+}
+.img{
+    width:5vw;
+    height:5vh;
+    margin-top:2vh;
+}
+.spelnamn{
+    margin-left:5vw;
+    margin-top:-50%;
+    text-decoration:none;
+    color:black;
+    padding-left:10%;
+}
+.relateradHolder{
+    width:100%;
+    margin-top:-20%;
+}
+.produktinfo{
+    width:80vw;
+    height:70vh;
+    margin-left:18vw;
+    margin-top:-80vh;
+    background-color: rgb(228, 228, 228);
+}
+.prodnamn{
+    margin-left:1vw;
+}
+.bild2{
+    width:20vw;
+    height:40vh;
+}
+.img2{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width:100%;
+    overflow:hidden;
+}
+.info{
+    width:100%;
+    height:50%;
+    margin-top:50%;
+}
+.text2{
+    width:30vw;
+    text-align: left;
+    margin-left:20vw;
+    margin-top:-80%;
+}
+.pris{
+    margin-left:1vw;
+    margin-top:2vh;
+}
+.Information{
+    margin-left:20vw;
+    width:33%;
+}
+.boldText{
+    font-weight: bold;
+}
+
+.btn2{
+    width:15%;
+    height:30%;
+    color:white;
+    border-style:solid;
+    border-width:0.1px 0.1px 0.1px 0.1px;
+    background-color:rgb(79, 134, 43);
+    border-radius: 5%;
+    font-size:100%;
+    transition: 0.5s ease-in-out;
+    float:right;
+}
+.btn2:hover{
+    cursor: pointer;
+    background-color:rgba(79, 134, 43, 0.507);
+}
+.Tabort{
+    position:relative;
+    color:white;
+    background-color:rgb(134, 43, 43);
+    transition: 0.5s ease-in-out;
+    margin-top:-13%;
+    float:right;
+    height:5%;
+}
+.Tabort:hover{
+    cursor: pointer;
+    background-color:rgba(134, 43, 43, 0.507);
+}
+.kategoriNamn{
+    width:50%;
+}
+#kategori{
+    float:left;
+    width:50%;
+}
+.ProductName{
+    width:90%;
+}
+.buttonHolder{
+    width:65%;
+    height:15vh;
+    margin-top:auto;
+}
+.colume{
+    float:right;
+    width:15%;
+}
+.specifikationLista{
+    width:100%;
+    border-color:black;
+    border-radius: 5%;
+    border-width: 1px;
+    border-style: solid;
+    float: right;
+    margin-top:3%;
+}
+.lista{
+    height:10%;
+}   
+.DeleteHolder{
+    width:10%;
+    height:10%;
+}
+.Delete{
+    width:15%;
+    height:30%;
+    color:white;
+    border-style:solid;
+    border-width:0.1px 0.1px 0.1px 0.1px;
+    background-color:rgb(134, 43, 43);
+    border-radius: 5%;
+    font-size:100%;
+    transition: 0.5s ease-in-out;
+}
+.Delete:hover{
+    cursor: pointer;
+    background-color:rgba(134, 43, 43, 0.507);
+}

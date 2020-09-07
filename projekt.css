@@ -11,7 +11,7 @@ body{
 .menu{
     width:18vw;
     left:3%;
-    top:-161.6vh;
+    top:-157.8vh;
     position:relative;
 }
 .menu a{
@@ -36,7 +36,7 @@ body{
     display:block;
     width:18vw;
     height:13vh;
-    top:-160.1vh;
+    top:-156.2vh;
     position:relative;
     left:3%;
     outline-style:solid;
@@ -45,57 +45,55 @@ body{
     padding-left:1%;
 }
 .produkter{
-    height:79.8vh;
+    height:84.5vh;
     width:75vw;
     background-color:#14a76c;
     position:relative;
-    top:-73.5vh;
+    top:-69.9vh;
     left:20.8vw;
     outline-style: solid;
 }
 .topmenu{
-    width:6.2vw;
+    width:4.8vw;
     height:5vh;
-    left:31vw;
-    top:-30.7vh;
+    left:73vw;
+    top:-41.5vh;
     position:relative;
 }
 .topmenu a{
     text-decoration:none;
-    font-size:18px;
+    font-size:14px;
     color:black;
-    background-color:#85dcbb;
     display:block;
 }
 .topmenu2{
-    width:5.5vw;
+    width:4.2vw;
     height:5vh;
-    left:53.5vw;
-    top:-35.7vh;
+    left:81vw;
+    top:-46.5vh;
     position:relative;
 }
 .topmenu2 a{
     text-decoration:none;
-    font-size:18px;
+    font-size:14px;
     color:black;
-    background-color:#85dcbb;
     display:block;
 }
 .topmenu3{
-    width:9.2vw;
+    width:7.3vw;
     height:5vh;
-    left:75vw;
-    top:-40.7vh;
+    left:88vw;
+    top:-51.5vh;
     position:relative;
 }
 .topmenu3 a{
     text-decoration:none;
-    font-size:18px;
+    font-size:14px;
     color:black;
     background-color:#85dcbb;
     display:block;
 }
-.menubackground{
+/*.menubackground{
     width:75vw;
     height:5vh;
     top:-45.8vh;
@@ -105,7 +103,7 @@ body{
     outline-width:1.5px;
     background-color:#85dcbb;
     z-index:-1;
-}
+}*/
 .top{
     width:93vw;
     height:14vh;
@@ -119,7 +117,7 @@ body{
 .sokruta{
     position: absolute;
     top:6vh;
-    left:40vw;
+    left:39vw;
     z-index:1;
 }
 .sok{
@@ -136,29 +134,29 @@ body{
 }
 .varukorg{
     position:relative;
-    left:88vw;
-    top:-25vh;
+    left:90vw;
+    top:-22vh;
 }
 .varukorg a{
-    height:60px;
-    width:60px;
+    height:40px;
+    width:40px;
     display:block;
     position:relative;
 }
 .varukorgimage{
-    height:60px;
+    height:40px;
 }
 .slideshow{
     position:relative;
     height:20vh;
     z-index:2;
     left:33vw;
-    top:-33vh;
+    top:-25vh;
 }
 .namn{
     position:relative;
     font-size:30px;
-    top:-34vh;
+    top:-31vh;
     left:20vw;
     width:10vw;
 }
@@ -168,8 +166,20 @@ body{
 .text{
     font-size:30px;
     position:relative;
-    top:-64vh;
+    top:-57vh;
     left:49vw;
     z-index:3;
     color:white;
 }
+/*
+.menubackground{
+    width:75vw;
+    height:5vh;
+    top:-45.8vh;
+    left:20.8vw;
+    position:relative;
+    outline-style:solid;
+    outline-width:1.5px;
+    background-color:#85dcbb;
+    z-index:-1;
+}*/

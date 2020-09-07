@@ -10,7 +10,7 @@ if(!$_SESSION["Login"]){
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="USERproduktinfo.css">
+    <link rel="stylesheet" href="CSS/USERproduktinfo.css">
     <title>Document</title>
 </head>
 <body>
@@ -72,14 +72,14 @@ $sql = "SELECT * FROM product where ID=$data";
                 // Skriver ut data i rader
                 echo '
                     <div class="produktinfo">
-                    <div class="colume"> 
-                            ';
+                    <div class="colume">';
+
                             $sql="SELECT * from specifikation where product_ID=$data";
                             $result2 = $mysqli->query($sql);
                             if ($result2->num_rows > 0) {
                                 // Skriver ut data i fulla tabbeller
                                 while($row2 = $result2->fetch_assoc()) {
-                                    // Skriver ut data i rader
+                                    // Skriver ut Tabort kategorier
                                     echo' 
                                         <div class="specifikationLista">
                                             <div class="lista">
@@ -91,8 +91,14 @@ $sql = "SELECT * FROM product where ID=$data";
                                         ';
                                 }
                             }
+                            echo'
+                            <form action="add/addKategori.php?kategori='.$data.'" method="post" enctype="multipart/form-data">
+                                <label for="productName">Ny kategori:</label><br>
+                                <input class="ProductName" type="text" name="kategori" placeholder="Ny kategori"><br>  
+                                <input class="btn2" id="kategori" type="submit" value="Ladda upp" name="submit">
+                            </form>';
                             echo'</div>
-                    <form action="updateDATABASE" method="POST">
+                    <form action="add/updateDATABASE.php?product='.$data.'" method="POST">
                         <div class="prodnamn">
                             <h1>'.$row['name'].'</h1>
                         </div>
@@ -100,7 +106,7 @@ $sql = "SELECT * FROM product where ID=$data";
                             <img src="img/'.$row['picture_name'].'" class="img2">
                         </div>
                         <div class="pris">
-                            <input class="price" type="text" name="price" Value="'.$row['price'].'" placeholder="Pris i kronor">KR<br>
+                            <input class="price" type="number" name="price" Value="'.$row['price'].'" placeholder="Pris i kronor">KR<br>
                         </div>
                         <div class="info">
                             <div class="text2">
@@ -108,14 +114,17 @@ $sql = "SELECT * FROM product where ID=$data";
                                     <textarea name="info" placeholder="Information om product" rows="10" cols="50">'.$row['info'].'</textarea
                             </div>
                         </div>
-                        <input class="Information" type="text" name="amount" value="'.$row['amount'].'" placeholder="Hur många eksemplar finns">Stycken kvar</br>
-                        <input class="Information" type="text" value="'.$row['age'].'" name="age" placeholder="Ålder">Ålder</br>
-                        <input class="Information" type="text" value="'.$row['players'].'" name="players" placeholder="Hur många spelare">Spelare<br>
+                        <input class="Information" type="number" name="amount" value="'.$row['amount'].'" placeholder="Hur många eksemplar finns">Stycken kvar</br>
+                        <input class="Information" type="number" value="'.$row['age'].'" name="age" placeholder="Ålder">Ålder</br>
+                        <input class="Information" type="text" name="Players" value="'.$row['players'].'" name="players" placeholder="Hur många spelare">Spelare<br>
                         <input class="Information" type="text" value="'.$row['time'].'" name="time" placeholder="Ungefär hur lång tid">minuter<br>
                         <div class="buttonHolder">
                             <input class="btn2" type="submit" Value="Submit">
                             </form>
                         </div>
+                        <form action="tabort/deleteProduct.php?filter='.$data.'" method="POST">
+                                <input type="submit" class="Delete" value="Radera produkt">
+                        </form>
                     </div>
                     
                     
