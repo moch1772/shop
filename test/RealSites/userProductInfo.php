@@ -73,6 +73,7 @@ $sql = "SELECT * FROM product where ID=$data";
                 echo '
                     <div class="produktinfo">
                     <div class="colume">';
+
                             $sql="SELECT * from specifikation where product_ID=$data";
                             $result2 = $mysqli->query($sql);
                             if ($result2->num_rows > 0) {
