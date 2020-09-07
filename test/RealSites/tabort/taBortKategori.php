@@ -22,8 +22,10 @@ $data;
 $sql = "DELETE FROM specifikation WHERE ID=$data";
 //echo $sql;
 
+
 //Aktivera komandot
 $query = $mysqli->query($sql);
+
 
 
 

@@ -1,3 +1,6 @@
+.buttonTEST{
+    border: none;
+}
 .content{
     height:120vh;
     width:99.7vw;
@@ -30,7 +33,7 @@
 .varukorg{
     position: absolute;
     margin-left:90vw;
-    margin-top:5vh;
+    margin-top:3vh;
     font-size:100%;
 }
 .menu{
@@ -38,7 +41,7 @@
     width:50vw;
     height:5vh;
     margin-left:30vw;
-    margin-top:12.7vh;
+    margin-top:12.8vh;
     background-color:white;
     border-style: solid;
     border-width: 0.1px 0.1px 0.1px 0.1px;
@@ -55,23 +58,6 @@
     text-decoration: underline;
     width:5vw;
 }
-.kategorier{
-    margin-left:1vw;
-}
-ul.breadcrumbs{
-    list-style:none;
-}
-ul.breadcrumbs li{
-    float:left;
-    display: inline;
-    
-}
-ul.breadcrumbs li+li:before{
-    padding:4px;
-    color:black;
-    content: ">";
-
-}
 .produkter{
     position: relative;
     width:80%;
@@ -80,11 +66,13 @@ ul.breadcrumbs li+li:before{
     min-height:1vh;
 }
 .lada{
+    color:black;
     width:13vw;
     float:left;
     height:40vh;
     margin-left:4vw;
     margin-top:7vh;
+    text-decoration: none;
     background-color: rgba(247, 247, 247, 0.863);
     transition: box-shadow 0.6s ease-in-out;
 }
