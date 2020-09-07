@@ -58,6 +58,20 @@
 .kategorier{
     margin-left:1vw;
 }
+ul.breadcrumbs{
+    list-style:none;
+}
+ul.breadcrumbs li{
+    float:left;
+    display: inline;
+    
+}
+ul.breadcrumbs li+li:before{
+    padding:4px;
+    color:black;
+    content: ">";
+
+}
 .produkter{
     position: relative;
     width:80%;
