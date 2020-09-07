@@ -60,6 +60,7 @@
 }
 ul.breadcrumbs{
     list-style:none;
+    margin-left:21vw;
 }
 ul.breadcrumbs li{
     float:left;
