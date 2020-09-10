@@ -60,6 +60,7 @@
 }
 ul.breadcrumbs{
     list-style:none;
+    margin-left:21vw;
 }
 ul.breadcrumbs li{
     float:left;
@@ -75,7 +76,7 @@ ul.breadcrumbs li+li:before{
 .varukorg2{
     position: relative;
     width:99.7vw;
-    margin-top:5vh;
+    margin-top:7vh;
     background-color: rgb(241, 241, 241);
 }
 .tom{

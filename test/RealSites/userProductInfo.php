@@ -95,7 +95,7 @@ $sql = "SELECT * FROM product where ID=$data";
                             <form action="add/addKategori.php?kategori='.$data.'" method="post" enctype="multipart/form-data">
                                 <label for="productName">Ny kategori:</label><br>
                                 <input class="ProductName" type="text" name="kategori" placeholder="Ny kategori"><br>  
-                                <input class="btn2" id="kategori" type="submit" value="Ladda upp" name="submit">
+                                <input class="btn2" id="kategori" type="submit" value="Submit" name="submit">
                             </form>';
                             echo'</div>
                     <form action="add/updateDATABASE.php?product='.$data.'" method="POST">

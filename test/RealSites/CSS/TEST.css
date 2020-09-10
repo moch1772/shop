@@ -58,11 +58,27 @@
     text-decoration: underline;
     width:5vw;
 }
+.laggtill{
+    margin-top:-7.6vh;
+    margin-left:91.6vw;
+}
+.laggtill2{
+    color: rgb(255, 255, 255);
+    background-color:rgb(79, 134, 43);
+    border-style:none;
+    width:5vw;
+    height:3vh;
+    border-radius: 5%;
+}
+.laggtill2:hover{
+    background-color: rgb(64, 105, 39);
+    cursor: pointer;
+}
 .produkter{
-    position: relative;
+    position: absolute;
     width:80%;
     margin-left:19.9vw;
-    margin-top:-7.2vh;
+    margin-top:7.2vh;
     min-height:1vh;
 }
 .lada{

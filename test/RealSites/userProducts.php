@@ -35,6 +35,9 @@ $_SESSION["Login"]=TRUE
             <h2>Kategorier</h2>
 
         </div>
+        <div class="laggtill">
+            <a href="add\laggTillProdukt.php"><button class="laggtill2">Lägg till</button></a>
+        </div>
         <div class="produkter">
             <?php
             $servername = "localhost";
