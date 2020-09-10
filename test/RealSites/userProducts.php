@@ -36,7 +36,7 @@ $_SESSION["Login"]=TRUE
 
         </div>
         <div class="laggtill">
-            <a href=""><button class="laggtill2">Lägg till</button></a>
+            <a href="add\laggTillProdukt.php"><button class="laggtill2">Lägg till</button></a>
         </div>
         <div class="produkter">
             <?php
