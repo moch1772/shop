@@ -113,6 +113,17 @@
                                 <h3>'.$row['info'].'</h3>
                             </div>
                         </div>
+                        <div class="data">
+                            <div>Stycken kvar '.$row['amount'].'</div>
+                            <div>Antal spelare '.$row['players'].'</div>
+                            <div class="rightDATA">
+                                <div>Ålder '.$row['age'].'+</div>
+                                <div>Ungefär tid '.$row['time'].'</div>
+                                <form action="add/addVarukorg.php?filter='.$data.'" method="POST">
+                                    <input type="submit" class="addToVarukorg" value="Lägg till i varukorgen">
+                                </form>
+                            </div>
+                        </div>
                     </div>';
                     }
                 }

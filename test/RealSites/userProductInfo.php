@@ -108,6 +108,7 @@ $sql = "SELECT * FROM product where ID=$data";
                         <div class="pris">
                             <input class="price" type="number" name="price" Value="'.$row['price'].'" placeholder="Pris i kronor">KR<br>
                         </div>
+                        <div class="infoHolder">
                         <div class="info">
                             <div class="text2">
                                 <Label class="boldText">Info</Label>
@@ -118,6 +119,7 @@ $sql = "SELECT * FROM product where ID=$data";
                         <input class="Information" type="number" value="'.$row['age'].'" name="age" placeholder="Ålder">Ålder</br>
                         <input class="Information" type="text" name="Players" value="'.$row['players'].'" name="players" placeholder="Hur många spelare">Spelare<br>
                         <input class="Information" type="text" value="'.$row['time'].'" name="time" placeholder="Ungefär hur lång tid">minuter<br>
+                        </div>
                         <div class="buttonHolder">
                             <input class="btn2" type="submit" Value="Submit">
                             </form>
