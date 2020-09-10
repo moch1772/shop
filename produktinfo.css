@@ -65,6 +65,23 @@
     margin-left:0.5vw;
     background-color: antiquewhite;
 }
+ul.breadcrumbs{
+    position: absolute;
+    list-style:none;
+    margin-left:21vw;
+    margin-top:20.9vh;
+}
+ul.breadcrumbs li{
+    float:left;
+    display: inline;
+    
+}
+ul.breadcrumbs li+li:before{
+    padding:4px;
+    color:black;
+    content: ">";
+
+}
 .text{
     margin-left:1.9vw;
 }
