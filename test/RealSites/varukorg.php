@@ -36,13 +36,13 @@
         <a href="">Vuxenspel</a>
         <a href="">Strategispel</a>
     </div>
+    <ul class="breadcrumbs">
+        <li><a href="mainpage.html">Startsida</a></li>
+        <li><a href="Productpage.html">Produktsida</a></li>
+        <li><a href="produktinfo.html">Carcassonne</a></li>
+        <li>Varukorg</li>
+    </ul>
         <div class="varukorg2">
-        <ul class="breadcrumbs">
-            <li><a href="mainpage.html">Startsida</a></li>
-            <li><a href="Productpage.html">Produktsida</a></li>
-            <li><a href="produktinfo.html">Carcassonne</a></li>
-            <li>Varukorg</li>
-        </ul>
             <div class="tom"></div>
             <form action="buy.php" method="POST">
             <?php
