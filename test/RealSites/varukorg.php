@@ -25,17 +25,17 @@
             </div>
         </div>
         <h2 class="h2">Kategorier</h2>
-        <div class="menu">
-            <a href="">Alla Brädspel</a>
-            <a href="">Dungeons and Dragons</a>
-            <a href="">Magic the Gathering</a>
-            <a href="">Kortspel</a>
-            <a href="">Pussel</a>
-            <a href="">Familjespel</a>
-            <a href="">Barnspel</a>
-            <a href="">Vuxenspel</a>
-            <a href="">Strategispel</a>
-        </div>
+    <div class="menu">
+        <a href="">Alla Brädspel</a>
+        <a href="">Dungeons and Dragons</a>
+        <a href="">Magic the Gathering</a>
+        <a href="">Kortspel</a>
+        <a href="">Pussel</a>
+        <a href="">Familjespel</a>
+        <a href="">Barnspel</a>
+        <a href="">Vuxenspel</a>
+        <a href="">Strategispel</a>
+    </div>
         <div class="varukorg2">
         <ul class="breadcrumbs">
             <li><a href="mainpage.html">Startsida</a></li>
