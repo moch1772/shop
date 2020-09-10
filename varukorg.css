@@ -117,10 +117,12 @@ ul.breadcrumbs li+li:before{
     margin-top:1.5vh;
 }
 .varunamn{
+    width:10vw;
     margin-left:15vw;
     margin-top:-5vh;
 }
 .varupris{
+    width:10vw;
     margin-left:40vw;
     margin-top:-3.8vh;
 }
@@ -145,7 +147,9 @@ ul.breadcrumbs li+li:before{
     cursor: pointer;
 }
 .buy2{
-    margin-left:55vw;
+    margin-left:54.9vw;
+    margin-top: -0.3vh;
+    padding:1px;
 }
 .btn2{
     width:5vw;
@@ -154,7 +158,7 @@ ul.breadcrumbs li+li:before{
     border:none;
     background-color:rgb(224, 184, 184);
     border-radius: 0%;
-    outline-style: solid;
+    outline-style:solid;
 
 }
 .btn2:hover{
