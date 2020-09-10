@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="CSS/varukorg.css">
+    <meta content="text/html; charset=iso-8859-2" http-equiv="Content-Type">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <title>Varukorg</title>
 </head>
 <body>
@@ -21,19 +23,26 @@
             <div class="varukorg">
                 <h2>Varukorg</h2>
             </div>
-            <div class="menu">
-                <div class="buttons">
-                    <a class="loggain" href=""><h4>Logga in</h4></a>
-                </div>
-            </div>
         </div>
+        <h2 class="h2">Kategorier</h2>
+    <div class="menu">
+        <a href="">Alla Brädspel</a>
+        <a href="">Dungeons and Dragons</a>
+        <a href="">Magic the Gathering</a>
+        <a href="">Kortspel</a>
+        <a href="">Pussel</a>
+        <a href="">Familjespel</a>
+        <a href="">Barnspel</a>
+        <a href="">Vuxenspel</a>
+        <a href="">Strategispel</a>
+    </div>
+        <div class="varukorg2">
         <ul class="breadcrumbs">
             <li><a href="mainpage.html">Startsida</a></li>
             <li><a href="Productpage.html">Produktsida</a></li>
             <li><a href="produktinfo.html">Carcassonne</a></li>
             <li>Varukorg</li>
         </ul>
-        <div class="varukorg2">
             <div class="tom"></div>
             <form action="buy.php" method="POST">
             <?php
@@ -59,14 +68,14 @@
                             '
                             <div class="lista">
                                 <img src="img/'.$row['picture_name'].'" class="img">
-                                    <div class="varunamn"><h3>'.$row['name'].'</h3></div>
-                                    <input style="width:5%;" type="number" name="'.$row['ID'].'" value="1">exemplar
-                                    <div class="varupris"><h3>Pris: '.$row['price'].'</h3></div>
+                                    <div class="varunamn">'.$row['name'].'</div>
+                                    <input style="width:8%;" type="number" name="'.$row['ID'].'" value="1">exemplar
+                                    <div class="varupris">Pris: '.$row['price'].'</div>
                                     <div class="button2">
-                                    <a href="tabort/tabortVarukorg.php?filter='.$row['ID'].'" class="buy2">
-                                        <button type="button" class="btn2">Ta bort</button>
-                                    </a>
-                                </div>
+                                        <a href="tabort/tabortVarukorg.php?filter='.$row['ID'].'" class="buy2">
+                                            <button type="button" class="btn2">Ta bort</button>
+                                        </a>
+                                    </div>
                             </div>';
             }}}
             ?>

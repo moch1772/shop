@@ -36,16 +36,45 @@
     margin-top:3vh;
     font-size:100%;
 }
+.Kategori{
+    width:18vw;
+    height:13vh;
+}
+.h2{
+    background-color:#7395ae;
+    display:block;
+    width:100%;
+    height:13vh;
+    position:relative;
+    margin-top: 0.2vh;
+    margin-left:2.7vw;
+    outline-style:solid;
+    outline-width:1.5px;
+    line-height:225%;
+    padding-left:1%;
+}
 .menu{
-    position: absolute;
-    width:50vw;
-    height:5vh;
-    margin-left:30vw;
-    margin-top:12.8vh;
-    background-color:white;
-    border-style: solid;
-    border-width: 0.1px 0.1px 0.1px 0.1px;
-    border-bottom-color: rgba(233, 233, 233, 0.753);
+    width:100%;
+    margin-left:2.68vw;
+    margin-top:-3vh;
+    position:relative;
+}
+.menu a{
+    background-color:#55bcc9;
+    color:black;
+    display:block;
+    padding:12px;
+    text-decoration:none;
+    outline-style:solid;
+    outline-width:1px;
+}
+.menu a:hover{
+    background-color: #97caef;
+    color:black;
+}
+.menu a:active{
+    background-color:#97caef;
+    color:black;
 }
 .loggain{
     position: absolute;
