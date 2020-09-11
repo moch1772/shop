@@ -48,6 +48,7 @@
             <div class="tom"></div>
             <form action="betala.php" method="POST">
             <?php
+            $reduce=array(0);
             $summa=0;
                 //variabler jag använde
                     $servername = "localhost";
@@ -70,6 +71,7 @@
                                 header('Location:varukorg.php');
                             }
                             $multiply=$_POST[$row['ID']];
+                            array_push($reduce,$multiply);
                             echo
                             '
                             <div class="lista">
@@ -79,6 +81,7 @@
                             </div>';
                             $multiply=$_POST[$row['ID']];
                             $summa=$summa+$row['price']*$multiply;
+                            setcookie('amount', serialize($reduce), time() + 3600, "/");
             }}}
             echo '<div class="Summa">'.$summa.'kr</div>';
             ?>
@@ -87,6 +90,8 @@
             <input class="Inforamtion" type="number" placeholder="Postnummer:12345" pattern="[0-9]{5}" name="postNumber" required>
             <input class="Inforamtion" type="tel" name="phone" placeholder="tel:1234567890" pattern="[0-9]{10}" required>
             <input class="Inforamtion" type="text" placeholder="För och efternamn" name="Name" required>
+            <input class="Inforamtion" type="number" placeholder="Kortnummer" name="kortnummer" pattern="[0-9]{16}"required>
+            <input class="Inforamtion" type="number" placeholder="CVC-kod" name="CVC" pattern="[0-9]{3}" required>
             </div>
             <div class="button">
                 <div class="buy">

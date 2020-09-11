@@ -24,9 +24,10 @@
                 <h2>Varukorg</h2>
             </div>
         </div>
-        <h2 class="h2">Kategorier</h2>
-    <div class="menu">
-    <a href="Productpage.php">Alla Brädspel</a>
+        <div class="Kategori">
+            <h2 class="h2">Kategorier</h2>
+        <div class="menu">
+            <a href="Productpage.php">Alla Brädspel</a>
             <a href="Kategori.php?filter=Dnd">Dungeons and Dragons</a>
             <a href="Kategori.php?filter=Mtg">Magic the Gathering</a>
             <a href="Kategori.php?filter=Kortspel">Kortspel</a>
@@ -35,62 +36,50 @@
             <a href="Kategori.php?filter=Barn">Barnspel</a>
             <a href="Kategori.php?filter=Vuxna">Vuxenspel</a>
             <a href="Kategori.php?filter=Strategi">Strategispel</a>
-    </div>
-    <ul class="breadcrumbs">
-        <li><a href="mainpage.html">Startsida</a></li>
-        <li><a href="Productpage.html">Produktsida</a></li>
-        <li><a href="produktinfo.html">Carcassonne</a></li>
-        <li>Varukorg</li>
-    </ul>
+        </div>
+        </div>
         <div class="varukorg2">
+            <ul class="breadcrumbs">
+                <li><a href="mainpage.html">Startsida</a></li>
+                <li><a href="Productpage.html">Produktsida</a></li>
+                <li><a href="produktinfo.html">Carcassonne</a></li>
+                <li>Varukorg</li>
+            </ul>
             <div class="tom"></div>
-            <form action="Kassa.php" method="POST">
             <?php
+            $counter=1;
                 //variabler jag använde
                     $servername = "localhost";
                     $username = "root";
                     $password = "";
                     $database = "webshop";
-            if(isset($_COOKIE['varukorg'])){
+            if(!isset($_COOKIE['Varukorg'])){
+                header('Location: varukorg.php');
+            }
             // Skapa kopling till server
             $mysqli = new mysqli($servername,$username,$password,$database);
             $array = unserialize($_COOKIE['varukorg']);
+            $amount = unserialize($_COOKIE['amount']);
             foreach(array_unique($array) as $ID) {
-                $sql='select * from product where ID='.$ID.'';
+                $reduce=array_search($counter, $amount);
+                $sql='select amount from product where ID='.$ID.'';
                 //Aktivera SQL komando
                 $result = $mysqli->query($sql);
                 //Ifall det finns ett resultat från sql kommndot såskrives tabbelen ut
                     if ($result->num_rows > 0) {
                         // Skriver ut data i fulla tabbeller
                         while($row = $result->fetch_assoc()) {
-            
-                            echo
-                            '
-                            <div class="lista">
-                                <img src="img/'.$row['picture_name'].'" class="img">
-                                    <div class="varunamn">'.$row['name'].'</div>
-                                    <input style="width:8%;" type="number" name="'.$row['ID'].'" value="1">exemplar
-                                    <div class="varupris">Pris: '.$row['price'].'</div>
-                                    <div class="button2">
-                                        <a href="tabort/tabortVarukorg.php?filter='.$row['ID'].'" class="buy2">
-                                            <button type="button" class="btn2">Ta bort</button>
-                                        </a>
-                                    </div>
-                            </div>';
-                        }
-                    }
-                }
-                echo'<div class="button">
-                        <div class="buy">
-                            <input type="submit" value="köp" class="btn">
-                        </div>
-                    </div>
-                   </form>';
-            }else{
-                echo'Här var det tomt';
-            }
+                            $newAmount=$row['amount']-$reduce;
+                            $sql='UPDATE product SET amount='.$newAmount.' where ID='.$ID.'';
+                            $fin = $mysqli->query($sql);
+                            $counter=$counter+1;
+                        }}}
+                        setcookie("varukorg", "", time() - 3600,'/');
+                        setcookie("amount", "", time() - 3600,'/');
+                            
             ?>
-            
+            <h1>Tack för ditt köp</h1>
+            </div>
             <div class="tom2"></div>
         </div>
 
