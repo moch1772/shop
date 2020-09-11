@@ -7,9 +7,7 @@
     <link rel="stylesheet" href="projekt.css">
     <meta content="text/html; charset=iso-8859-2" http-equiv="Content-Type">
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-    <style>
-    .mySlides {display:none;}
-    </style>
+    
 </head>
 <body>
     <div class="top"></div>
@@ -26,32 +24,12 @@
     <div class="topmenu2"><a href="omoss.html">Om oss</a></div>
     <div class="topmenu3"><a href="kontakt.html">Kontakta oss</a></div>
     </div>
-    <!--<div class="menubackground"></div>-->
-      <div class="slideshow" style="max-width:50vw">
-        <img class="mySlides" src="test.jpg" style="width:100%; height:60vh;">
-        <img class="mySlides" src="test2.jpg" style="width:100%; height:60vh;">
-        <img class="mySlides" src="test3.jpg" style="width:100%; height:60vh;">
-      </div>
-      <script>
-        var myIndex = 0;
-        carousel();
-        
-        function carousel() {
-          var i;
-          var x = document.getElementsByClassName("mySlides");
-          for (i = 0; i < x.length; i++) {
-            x[i].style.display = "none";  
-          }
-          myIndex++;
-          if (myIndex > x.length) {myIndex = 1}    
-          x[myIndex-1].style.display = "block";  
-          setTimeout(carousel, 5000);
-        }
-        </script>
-    <div class="text">Lorem Ipsum</div>
-    <div class="produkter"></div>
-    <h2 class="h2">Kategorier</h2>
-    <div class="menu">
+    <div class="bakgrund">
+        <div class="omoss">Infoga kontaktuppgifter här:</div>
+        <div class="omosstext"></div>
+    </div>
+    <h2 class="h3">Kategorier</h2>
+    <div class="meny">
         <a href="Productpage.html">Alla Brädspel</a>
         <a href="Productpage.html">Dungeons and Dragons</a>
         <a href="Productpage.html">Magic the Gathering</a>
