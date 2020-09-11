@@ -34,7 +34,7 @@ if ($uploadOk==1 && file_exists($target_file)) {
 }
 
 // Filstorlek 
-if ($uploadOk==1 && $_FILES["pic"]["size"] > 500000) {
+if ($uploadOk==1 && $_FILES["pic"]["size"] > 5000000) {
   echo "Sorry, your file is too large.";
   $uploadOk = 0;
 }
