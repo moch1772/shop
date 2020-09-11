@@ -25,7 +25,7 @@
                     <img src="img/varukorg.png" class="varukorgimage">
                 </a>
             </div>
-            <div class="topmenu"><a href="test/Loggin.html">Logga in</a></div>
+            <div class="topmenu"><a href="Loggin.php">Logga in</a></div>
             <div class="topmenu2"><a href="omoss.html">Om oss</a></div>
             <div class="topmenu3"><a href="kontakt.html">Kontakta oss</a></div>
         </div>
