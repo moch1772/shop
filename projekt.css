@@ -92,17 +92,6 @@ body{
     color:black;
     display:block;
 }
-/*.menubackground{
-    width:75vw;
-    height:5vh;
-    top:-45.8vh;
-    left:20.8vw;
-    position:relative;
-    outline-style:solid;
-    outline-width:1.5px;
-    background-color:#85dcbb;
-    z-index:-1;
-}*/
 .top{
     width:93vw;
     height:14vh;
@@ -129,7 +118,7 @@ body{
 .logga{
     position:relative;
     top:-12vh;
-    left:3vw;
+    left:5vw;
 }
 .varukorg{
     position:relative;
@@ -182,3 +171,58 @@ body{
     background-color:#85dcbb;
     z-index:-1;
 }*/
+.bakgrund{
+    width:75vw;
+    height:84.4vh;
+    background-color:#14a76c;
+    left:20.8vw;
+    top:-42.2vh;
+    position:relative;
+    outline-style:solid;
+}
+.h3{
+    background-color:#7395ae;
+    display:block;
+    width:18vw;
+    height:13vh;
+    top:-128.4vh;
+    position:relative;
+    left:3%;
+    outline-style:solid;
+    outline-width:1.5px;
+    line-height:225%;
+    padding-left:1%;
+}
+.meny{
+    width:18vw;
+    left:3%;
+    top:-130vh;
+    position:relative;
+}
+.meny a{
+    background-color:#55bcc9;
+    color:black;
+    display:block;
+    padding:12px;
+    text-decoration:none;
+    outline-style:solid;
+    outline-width:1px;
+}
+.meny a:hover{
+    background-color: #97caef;
+    color:black;
+}
+.meny a:active{
+    background-color:#97caef;
+    color:black;
+}
+.omoss{
+    font-size:24px;
+    left:2vw;
+    position:relative;
+}
+.omosstext{
+    position:relative;
+    top:2vw;
+    left:2vw;
+}
