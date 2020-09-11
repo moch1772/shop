@@ -80,13 +80,13 @@
                             $multiply=$_POST[$row['ID']];
                             $summa=$summa+$row['price']*$multiply;
             }}}
-            echo '<div class="Summa">'.$summa.'</div>';
+            echo '<div class="Summa">'.$summa.'kr</div>';
             ?>
             <div class="KundInfo">
-            <input type="text" placeholder="Hem addres" name="addres" required>
-            <input type="number" placeholder="Postnummer:12345" pattern="[0-9]{5}" name="postNumber" required>
-            <input type="tel" name="phone" placeholder="tel:1234567890" pattern="[0-9]{10}" required>
-            <input type="text" placeholder="För och efternamn" name="Name" required>
+            <input class="Inforamtion" type="text" placeholder="Hem addres" name="addres" required>
+            <input class="Inforamtion" type="number" placeholder="Postnummer:12345" pattern="[0-9]{5}" name="postNumber" required>
+            <input class="Inforamtion" type="tel" name="phone" placeholder="tel:1234567890" pattern="[0-9]{10}" required>
+            <input class="Inforamtion" type="text" placeholder="För och efternamn" name="Name" required>
             </div>
             <div class="button">
                 <div class="buy">

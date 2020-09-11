@@ -163,3 +163,15 @@ ul.breadcrumbs li+li:before{
 .tom2{
     height:5vh;
 }
+.Summa{
+    font-size:400%;
+    float:right;
+    margin-top:2%;
+}
+.kr{
+    font-size:100%;
+}
+.KundInfo{
+    width:50%;
+    margin-top:5%;
+}
