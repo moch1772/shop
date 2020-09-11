@@ -1,24 +1,22 @@
 .content{
-    height:120vh;
-    width:99.7vw;
-    margin-left:-1vw;
-    margin-top:-1.3vh;
+    height:100vh;
+    width:90vw;
 }
 .meny{
-    height:15%;
-    width:100%;
-    background-color: rgb(228, 228, 228);
-    border-style: solid;
-    border-width: 0px 0px 0.1px 0px;
-    border-bottom-color: rgba(182, 182, 182, 0.753);
+    height:14vh;
+    width:92.98vw;
+    margin-left:2.75vw;
+    margin-top:2.5vh;
+    background-color: #41b3a3;
+    outline-style: solid;
 }
 .logga{
     position: absolute;
-    margin-left:0%;
-    margin-top:1.2%;
+    margin-left:2.25vw;
+    margin-top:1vh;
 }
 .bild{
-    width:13%;
+    width:11.5%;
 }
 .sokruta{
     position: absolute;
@@ -30,50 +28,105 @@
     width:40vw;
     height:5vh;
 }
+.topmenu{
+    width:5vw;
+    height:5vh;
+    margin-left:70.24vw;
+    margin-top:-1.5vh;
+    position:relative;
+}
+.topmenu a{
+    text-decoration:none;
+    font-size:14px;
+    color:black;
+    display:block;
+}
+.topmenu2{
+    width:4.2vw;
+    height:5vh;
+    margin-left:78.25vw;
+    margin-top:-5vh;
+    position:relative;
+}
+.topmenu2 a{
+    text-decoration:none;
+    font-size:14px;
+    color:black;
+    display:block;
+}
+.topmenu3{
+    width:7.3vw;
+    height:5vh;
+    margin-left:85.25vw;
+    margin-top:-5vh;
+    position:relative;
+}
+.topmenu3 a{
+    text-decoration:none;
+    font-size:14px;
+    color:black;
+    display:block;
+}
 .varukorg{
     position: absolute;
-    margin-left:90vw;
-    margin-top:5vh;
-    font-size:100%;
+    margin-left:87.25vw;
+    margin-top:4.89vh;
+}
+.varukorg a{
+    height:1vh;
+    width:1vw;
+    display:block;
+}
+.varukorgimage{
+    height:690%;
+}
+
+.h2{
+    background-color:#7395ae;
+    display:block;
+    width:17.06vw;
+    height:13vh;
+    position:relative;
+    margin-top: 0.2vh;
+    margin-left:2.7vw;
+    outline-style:solid;
+    outline-width:1.5px;
+    line-height:225%;
+    padding-left:1%;
+    text-align: left;
+    padding-left: 0.9vw;
 }
 .menu{
-    position: absolute;
-    width:50vw;
-    height:5vh;
-    margin-left:30vw;
-    margin-top:12.7vh;
-    background-color:white;
-    border-style: solid;
-    border-width: 0.1px 0.1px 0.1px 0.1px;
-    border-bottom-color: rgba(233, 233, 233, 0.753);
+    width:17.09vw;
+    margin-left:2.68vw;
+    margin-top:-3.3vh;
+    position:relative;
 }
-.loggain{
-    position: absolute;
-    margin-top:-0.7%;
-    margin-left:2%;
-    text-decoration: none;
+.menu a{
+    background-color:#55bcc9;
+    color:black;
+    display:block;
+    padding:12px;
+    text-decoration:none;
+    outline-style:solid;
+    outline-width:1px;
 }
-.loggain :hover{
-    position: absolute;
-    text-decoration: underline;
-    width:5vw;
+.menu a:hover{
+    background-color: #97caef;
+    color:black;
 }
-.kategorier{
-    width:10vw;
-    height:50vh;
-    margin-top:-2.2vh;
-    margin-left:0.5vw;
-    background-color: antiquewhite;
-}
-.text{
-    margin-left:1.9vw;
+.menu a:active{
+    background-color:#97caef;
+    color:black;
 }
 .relaterade{
-    width:15vw;
+    width:15.78vw;
     height:60vh;
-    margin-left:12.7vw;
-    margin-top:-46vh;
-    font-size:2vh;
+    margin-left:19.8vw;
+    margin-top:-84.6vh;
+    font-size:small;
+    background-color:#43c79f;
+    outline-style: solid;
 }
 .reltext{
     margin-left:3vw;
@@ -108,14 +161,15 @@
     width:100%;
     font-size:100%;
     margin-top:30%;
-    text-decoration:none ;
+    text-decoration:none;
 }
 .produktinfo{
     width:60vw;
-    height:70vh;
-    margin-left:30vw;
-    margin-top:-62.3vh;
-    background-color: rgb(228, 228, 228);
+    height:80vh;
+    margin-left:35.74vw;
+    margin-top:-61.8vh;
+    background-color:#14a76c;
+    outline-style: solid;
 }
 .prodnamn{
     margin-left:1vw;
@@ -135,12 +189,12 @@
 .info{
     width:70%;
     height:50%;
-    margin-top:-40%;;
+    margin-top:-50vh;
 }
 .data{
     width:70%;
     height:20%;
-    margin-left:30%;
+    margin-left:22vw;
 }
 .rightDATA{
     width:50%;
@@ -152,13 +206,14 @@
     width:60%;
     height:30%;
     color:white;
-    border-style:solid;
-    border-width:0.1px 0.1px 0.1px 0.1px;
-    background-color:rgb(79, 134, 43);
+    border-style: none;
+    background-color:#338856;
     border-radius: 5%;
     font-size:100%;
     transition: 0.5s ease-in-out;
     margin-top:30%;
+    outline-style: solid;
+    outline-color: black;
 }
 .addToVarukorg:hover{
     cursor: pointer;
