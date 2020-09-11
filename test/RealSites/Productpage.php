@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="CSS/TEST.css">
+    <meta content="text/html; charset=iso-8859-2" http-equiv="Content-Type">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <title>Document</title>
 </head>
 <body>
@@ -21,15 +23,20 @@
             <div class="varukorg">
                 <h2>Varukorg</h2>
             </div>
-            <div class="menu">
-                <div class="buttons">
-                    <a class="loggain" href="Loggin.php"><h4>Logga in</h4></a>
-                </div>
             </div>
+            <div class="Kategori">
+            <h2 class="h2">Kategorier</h2>
+        <div class="menu">
+            <a href="Productpage.php">Alla Brädspel</a>
+            <a href="Kategori.php?filter=Dnd">Dungeons and Dragons</a>
+            <a href="Kategori.php?filter=Mtg">Magic the Gathering</a>
+            <a href="Kategori.php?filter=Kortspel">Kortspel</a>
+            <a href="Kategori.php?filter=Pussel">Pussel</a>
+            <a href="Kategori.php?filter=Familj">Familjespel</a>
+            <a href="Kategori.php?filter=Barn">Barnspel</a>
+            <a href="Kategori.php?filter=Vuxna">Vuxenspel</a>
+            <a href="Kategori.php?filter=Strategi">Strategispel</a>
         </div>
-        <div class="kategorier">
-            <h2>Kategorier</h2>
-
         </div>
         <div class="produkter">
             <?php

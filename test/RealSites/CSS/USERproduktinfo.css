@@ -140,11 +140,14 @@
 }
 .pris{
     margin-left:1vw;
-    margin-top:2vh;
+    margin-top:40vh;
 }
 .Information{
     margin-left:20vw;
     width:33%;
+}
+.infoHolder{
+    margin-top:-90%;
 }
 .boldText{
     font-weight: bold;
@@ -223,6 +226,7 @@
     background-color:rgb(134, 43, 43);
     border-radius: 5%;
     font-size:100%;
+    margin-top:5%;
     transition: 0.5s ease-in-out;
 }
 .Delete:hover{
