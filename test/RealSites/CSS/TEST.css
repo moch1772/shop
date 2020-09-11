@@ -32,10 +32,18 @@
     height:5vh;
 }
 .varukorg{
-    position: absolute;
-    margin-left:83vw;
-    margin-top:3vh;
-    font-size:100%;
+    position:relative;
+    margin-left:90vw;
+    margin-top:22vh;
+}
+.varukorg a{
+    height:40px;
+    width:40px;
+    display:block;
+    position:relative;
+}
+.varukorgimage{
+    height:40px;
 }
 .Kategori{
     width:18vw;
@@ -93,38 +101,67 @@
     background-color: rgb(64, 105, 39);
     cursor: pointer;
 }
-.produkter{
+ul.breadcrumbs{
     position: absolute;
-    width:40vw;
-    margin-left:19.9vw;
-    margin-top:7.2vh;
-    min-height:1vh;
+    list-style:none;
+    margin-top:-12vh;
+    margin-left:20vw;
+    z-index: 10;
 }
-.lada{
-    color:black;
-    width:13vw;
+ul.breadcrumbs li{
     float:left;
-    height:40vh;
-    margin-left:6vw;
-    margin-top:-10vh;
-    text-decoration: none;
-    background-color: #14a76c;
-    transition: box-shadow 0.6s ease-in-out;
+    display: inline;
+    
+}
+ul.breadcrumbs li+li:before{
+    padding:4px;
+    color:black;
+    content: ">";
+
+}
+.produkter{
+    position: relative;
+    overflow: scroll;
+    overflow: hidden;
+    width:74.9vw;
+    margin-left:20.83vw;
+    margin-top:-12.9vh;
+    background-color:#14a76c;
     outline-style: solid;
 }
-.lada:hover{
-    box-shadow: 2px 2px 20px rgba(87, 87, 87, 0.747) ;
+.tom{
+    height:1vh;
+}
+.lada{
+    position: relative;
+    width:15vw;
+    height:43vh;
+    float:left;
+    margin-left:7vw;
+    margin-top:6vh;
+    background-color: rgb(90, 218, 158);
+    outline-style: solid;
+    text-decoration: none;
 }
 .ruta{
     width:90%;
     height:50%;
-    margin-left:0.68vw;
-    margin-top:1vh;
+    margin-left:0.7vw;
+    margin-top:1.5vh;
 }
 .namn{
-    margin-left:0.7vw;
+    height:1vh;
+    margin-left:1vw;
+    margin-top:2vh;
 }
 .pris{
-    margin-top:2vh;
-    margin-left:0.7vw;
+    margin-left:1vw;
+    margin-top:9vh;
+}
+.lada:hover{
+    box-shadow: 2px 2px 20px rgba(87, 87, 87, 0.747) ;
+}
+.tom2{
+    height:5vh;
+    margin-top:50vh;
 }

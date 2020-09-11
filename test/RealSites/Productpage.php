@@ -38,7 +38,14 @@
             <a href="Kategori.php?filter=Strategi">Strategispel</a>
         </div>
         </div>
+        <ul class="breadcrumbs">
+        <li><a href="mainpage.html">Startsida</a></li>
+        <li><a href="Productpage.html">Produktsida</a></li>
+        <li><a href="produktinfo.html">Carcassonne</a></li>
+        <li>Varukorg</li>
+    </ul>
         <div class="produkter">
+            <div class="tom"></div>
             <?php
                 //variabler jag använde
                 $servername = "localhost";
@@ -68,8 +75,7 @@
                     echo "0 results";
                 }
             ?>
-            
-            
+            <div class="tom2"></div>
         </div>
     </div>
 </body>
