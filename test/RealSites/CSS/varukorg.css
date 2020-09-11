@@ -95,7 +95,7 @@ ul.breadcrumbs li+li:before{
     position: relative;
     width:74.9vw;
     margin-left:20.83vw;
-    margin-top:-87.3vh;
+    margin-top:-92.7vh;
     background-color:#14a76c;
     outline-style: solid;
 }
@@ -134,7 +134,7 @@ ul.breadcrumbs li+li:before{
 
 .btn{
     width:5vw;
-    height:3vh;
+    height:4vh;
     border-style:solid;
     border-width:0.1px 0.1px 0.1px 0.1px;
     background-color:rgb(184, 184, 224);

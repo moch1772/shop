@@ -21,9 +21,14 @@
                 </form>
             </div>
             <div class="varukorg">
-                <h2>Varukorg</h2>
+                <a href="varukorg.php">
+                    <img src="img/varukorg.png" class="varukorgimage">
+                </a>
             </div>
-            </div>
+            <div class="topmenu"><a href="test/Loggin.html">Logga in</a></div>
+            <div class="topmenu2"><a href="omoss.html">Om oss</a></div>
+            <div class="topmenu3"><a href="kontakt.html">Kontakta oss</a></div>
+        </div>
             <div class="Kategori">
             <h2 class="h2">Kategorier</h2>
         <div class="menu">
@@ -38,7 +43,12 @@
             <a href="Kategori.php?filter=Strategi">Strategispel</a>
         </div>
         </div>
+        <ul class="breadcrumbs">
+        <li><a href="mainpage.html">Startsida</a></li>
+        <li>Produktsida</li>
+    </ul>
         <div class="produkter">
+            <div class="tom"></div>
             <?php
                 //variabler jag använde
                 $servername = "localhost";
@@ -68,8 +78,7 @@
                     echo "0 results";
                 }
             ?>
-            
-            
+            <div class="tom2"></div>
         </div>
     </div>
 </body>

@@ -9,33 +9,81 @@
     height:14vh;
     width:92.98vw;
     margin-left:2.75vw;
-    margin-top:1vh;
+    margin-top:2.5vh;
     background-color: #41b3a3;
     outline-style: solid;
 }
 .logga{
     position: absolute;
-    margin-left:0%;
-    margin-top:1.2%;
+    margin-left:2.25vw;
+    margin-top:1vh;
 }
 .bild{
-    width:13%;
+    width:11.5%;
 }
 .sokruta{
     position: absolute;
-    margin-top:6vh;
-    margin-left:40vw;
+    margin-top:5vh;
+    margin-left:36.25vw;
 }
 .sok{
     position: absolute;
     width:40vw;
     height:5vh;
+    outline-style: solid;
+    outline-width: 1px;
+}
+.topmenu{
+    width:5vw;
+    height:5vh;
+    margin-left:70.24vw;
+    margin-top:-1.5vh;
+    position:relative;
+}
+.topmenu a{
+    text-decoration:none;
+    font-size:14px;
+    color:black;
+    display:block;
+}
+.topmenu2{
+    width:4.2vw;
+    height:5vh;
+    margin-left:78.25vw;
+    margin-top:-5vh;
+    position:relative;
+}
+.topmenu2 a{
+    text-decoration:none;
+    font-size:14px;
+    color:black;
+    display:block;
+}
+.topmenu3{
+    width:7.3vw;
+    height:5vh;
+    margin-left:85.25vw;
+    margin-top:-5vh;
+    position:relative;
+}
+.topmenu3 a{
+    text-decoration:none;
+    font-size:14px;
+    color:black;
+    display:block;
 }
 .varukorg{
     position: absolute;
-    margin-left:83vw;
-    margin-top:3vh;
-    font-size:100%;
+    margin-left:87.25vw;
+    margin-top:4.89vh;
+}
+.varukorg a{
+    height:1vh;
+    width:1vw;
+    display:block;
+}
+.varukorgimage{
+    height:690%;
 }
 .Kategori{
     width:18vw;
@@ -53,6 +101,8 @@
     outline-width:1.5px;
     line-height:225%;
     padding-left:1%;
+    text-align: left;
+    padding-left: 0.9vw;
 }
 .menu{
     width:18.06vw;
@@ -93,38 +143,67 @@
     background-color: rgb(64, 105, 39);
     cursor: pointer;
 }
-.produkter{
+ul.breadcrumbs{
     position: absolute;
-    width:40vw;
-    margin-left:19.9vw;
-    margin-top:7.2vh;
-    min-height:1vh;
+    list-style:none;
+    margin-top:-12vh;
+    margin-left:20vw;
+    z-index: 10;
 }
-.lada{
-    color:black;
-    width:13vw;
+ul.breadcrumbs li{
     float:left;
-    height:40vh;
-    margin-left:6vw;
-    margin-top:-10vh;
-    text-decoration: none;
-    background-color: #14a76c;
-    transition: box-shadow 0.6s ease-in-out;
+    display: inline;
+    
+}
+ul.breadcrumbs li+li:before{
+    padding:4px;
+    color:black;
+    content: ">";
+
+}
+.produkter{
+    position: relative;
+    overflow: scroll;
+    overflow: hidden;
+    width:74.9vw;
+    margin-left:20.83vw;
+    margin-top:-12.9vh;
+    background-color:#14a76c;
     outline-style: solid;
 }
-.lada:hover{
-    box-shadow: 2px 2px 20px rgba(87, 87, 87, 0.747) ;
+.tom{
+    height:1vh;
+}
+.lada{
+    position: relative;
+    width:15vw;
+    height:43vh;
+    float:left;
+    margin-left:7vw;
+    margin-top:6vh;
+    background-color: rgb(90, 218, 158);
+    outline-style: solid;
+    text-decoration: none;
 }
 .ruta{
     width:90%;
     height:50%;
-    margin-left:0.68vw;
-    margin-top:1vh;
+    margin-left:0.7vw;
+    margin-top:1.5vh;
 }
 .namn{
-    margin-left:0.7vw;
+    height:1vh;
+    margin-left:1vw;
+    margin-top:2vh;
 }
 .pris{
-    margin-top:2vh;
-    margin-left:0.7vw;
+    margin-left:1vw;
+    margin-top:9vh;
+}
+.lada:hover{
+    box-shadow: 2px 2px 20px rgba(87, 87, 87, 0.747) ;
+}
+.tom2{
+    height:5vh;
+    margin-top:50vh;
 }
