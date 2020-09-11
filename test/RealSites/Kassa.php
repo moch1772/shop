@@ -24,28 +24,31 @@
                 <h2>Varukorg</h2>
             </div>
         </div>
-        <h2 class="h2">Kategorier</h2>
-    <div class="menu">
-        <a href="">Alla Brädspel</a>
-        <a href="">Dungeons and Dragons</a>
-        <a href="">Magic the Gathering</a>
-        <a href="">Kortspel</a>
-        <a href="">Pussel</a>
-        <a href="">Familjespel</a>
-        <a href="">Barnspel</a>
-        <a href="">Vuxenspel</a>
-        <a href="">Strategispel</a>
-    </div>
-    <ul class="breadcrumbs">
-        <li><a href="mainpage.html">Startsida</a></li>
-        <li><a href="Productpage.html">Produktsida</a></li>
-        <li><a href="produktinfo.html">Carcassonne</a></li>
-        <li>Varukorg</li>
-    </ul>
+        <div class="Kategori">
+            <h2 class="h2">Kategorier</h2>
+        <div class="menu">
+            <a href="Productpage.php">Alla Brädspel</a>
+            <a href="Kategori.php?filter=Dnd">Dungeons and Dragons</a>
+            <a href="Kategori.php?filter=Mtg">Magic the Gathering</a>
+            <a href="Kategori.php?filter=Kortspel">Kortspel</a>
+            <a href="Kategori.php?filter=Pussel">Pussel</a>
+            <a href="Kategori.php?filter=Familj">Familjespel</a>
+            <a href="Kategori.php?filter=Barn">Barnspel</a>
+            <a href="Kategori.php?filter=Vuxna">Vuxenspel</a>
+            <a href="Kategori.php?filter=Strategi">Strategispel</a>
+        </div>
+        </div>
         <div class="varukorg2">
+            <ul class="breadcrumbs">
+                <li><a href="mainpage.html">Startsida</a></li>
+                <li><a href="Productpage.html">Produktsida</a></li>
+                <li><a href="produktinfo.html">Carcassonne</a></li>
+                <li>Varukorg</li>
+            </ul>
             <div class="tom"></div>
-            <form action="Kassa.php" method="POST">
+            <form action="betala.php" method="POST">
             <?php
+            $summa=0;
                 //variabler jag använde
                     $servername = "localhost";
                     $username = "root";
@@ -63,25 +66,31 @@
                     if ($result->num_rows > 0) {
                         // Skriver ut data i fulla tabbeller
                         while($row = $result->fetch_assoc()) {
-            
+                            if(!isset($_POST[$row['ID']])){
+                                header('Location:varukorg.php');
+                            }
+                            $multiply=$_POST[$row['ID']];
                             echo
                             '
                             <div class="lista">
                                 <img src="img/'.$row['picture_name'].'" class="img">
-                                    <div class="varunamn">'.$row['name'].'</div>
-                                    <input style="width:8%;" type="number" name="'.$row['ID'].'" value="1">exemplar
-                                    <div class="varupris">Pris: '.$row['price'].'</div>
-                                    <div class="button2">
-                                        <a href="tabort/tabortVarukorg.php?filter='.$row['ID'].'" class="buy2">
-                                            <button type="button" class="btn2">Ta bort</button>
-                                        </a>
-                                    </div>
+                                    <div class="varunamn">'.$row['name'].'*'.$multiply.'</div>
+                                    <div class="varupris">Pris: '.$row['price']*$multiply.'</div>
                             </div>';
+                            $multiply=$_POST[$row['ID']];
+                            $summa=$summa+$row['price']*$multiply;
             }}}
+            echo '<div class="Summa">'.$summa.'</div>';
             ?>
+            <div class="KundInfo">
+            <input type="text" placeholder="Hem addres" name="addres" required>
+            <input type="number" placeholder="Postnummer:12345" pattern="[0-9]{5}" name="postNumber" required>
+            <input type="tel" name="phone" placeholder="tel:1234567890" pattern="[0-9]{10}" required>
+            <input type="text" placeholder="För och efternamn" name="Name" required>
+            </div>
             <div class="button">
                 <div class="buy">
-                    <input type="submit" value="köp" class="btn">
+                    <input type="submit" value="Betala" class="btn">
                 </div>
             </div>
         </form>
