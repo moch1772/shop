@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="CSS/produktinfo.css">
+    <meta content="text/html; charset=iso-8859-2" http-equiv="Content-Type">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <title>Document</title>
 </head>
 <body>
@@ -18,21 +20,25 @@
                     <input class="sok" type="text" placeholder="Sök">
                 </form>
             </div>
-            <div class="varukorg">
-                <h2>Varukorg</h2>
-            </div>
-            <div class="menu">
-                <div class="buttons">
-                    <a class="loggain" href="Loggin.php"><h4>Logga in</h4></a>
-                </div>
-            </div>
+            <div class="varukorg"><a href="varukorg.html"><img src="img/varukorg.png" class="varukorgimage"></a></div>
+            <div class="topmenu"><a href="test/Loggin.html">Logga in</a></div>
+            <div class="topmenu2"><a href="omoss.html">Om oss</a></div>
+            <div class="topmenu3"><a href="kontakt.html">Kontakta oss</a></div>
         </div>
-        <div class="kategorier">
-            <h2 class="text">Kategorier</h2>
-
+        <h2 class="h2">Kategorier</h2>
+        <div class="menu">
+            <a href="Productpage.html">Alla Brädspel</a>
+            <a href="Productpage.html">Dungeons and Dragons</a>
+            <a href="Productpage.html">Magic the Gathering</a>
+            <a href="Productpage.html">Kortspel</a>
+            <a href="Productpage.html">Pussel</a>
+            <a href="Productpage.html">Familjespel</a>
+            <a href="Productpage.html">Barnspel</a>
+            <a href="Productpage.html">Vuxenspel</a>
+            <a href="Productpage.html">Strategispel</a>
         </div>
         <div class="relaterade">
-            <h2 class="reltext">Relaterade spel</h2>
+            <h5 class="reltext">Relaterade spel</h5>
         <?php
         //variabler jag använde
         $servername = "localhost";
