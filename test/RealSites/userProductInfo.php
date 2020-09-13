@@ -10,14 +10,16 @@ if(!$_SESSION["Login"]){
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="CSS/USERproduktinfo.css">
+    <link rel="stylesheet" href="CSS/TEST.css">
     <title>Document</title>
 </head>
 <body>
     <div class="content">
         <div class="meny">
-            <div class="logga">
+        <div class="logga">
+                <a href="mainpage.html">
                 <img src="img/logga.png" class="bild">
+                </a>
             </div>
             <div class="sokruta">
 

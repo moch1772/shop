@@ -12,7 +12,9 @@
     <div class="content">
         <div class="meny">
             <div class="logga">
+                <a href="mainpage.html">
                 <img src="img/logga.png" class="bild">
+                </a>
             </div>
             <div class="sokruta">
 

@@ -1,0 +1,228 @@
+@font-face{
+    font-family: text;
+    src:url(BalsamiqSans-Bold.ttf);
+}
+body{
+    height:100vh;
+    width:90vw;
+    padding:0;
+    margin:0;
+}
+.menu{
+    width:18vw;
+    left:3%;
+    top:-157.8vh;
+    position:relative;
+}
+.menu a{
+    background-color:#55bcc9;
+    color:black;
+    display:block;
+    padding:12px;
+    text-decoration:none;
+    outline-style:solid;
+    outline-width:1px;
+}
+.menu a:hover{
+    background-color: #97caef;
+    color:black;
+}
+.menu a:active{
+    background-color:#97caef;
+    color:black;
+}
+.h2{
+    background-color:#7395ae;
+    display:block;
+    width:18vw;
+    height:13vh;
+    top:-156.2vh;
+    position:relative;
+    left:3%;
+    outline-style:solid;
+    outline-width:1.5px;
+    line-height:225%;
+    padding-left:1%;
+}
+.produkter{
+    height:84.5vh;
+    width:75vw;
+    background-color:#14a76c;
+    position:relative;
+    top:-69.9vh;
+    left:20.8vw;
+    outline-style: solid;
+}
+.topmenu{
+    width:4.8vw;
+    height:5vh;
+    left:73vw;
+    top:-41.5vh;
+    position:relative;
+}
+.topmenu a{
+    text-decoration:none;
+    font-size:14px;
+    color:black;
+    display:block;
+}
+.topmenu2{
+    width:4.2vw;
+    height:5vh;
+    left:81vw;
+    top:-46.5vh;
+    position:relative;
+}
+.topmenu2 a{
+    text-decoration:none;
+    font-size:14px;
+    color:black;
+    display:block;
+}
+.topmenu3{
+    width:7.3vw;
+    height:5vh;
+    left:88vw;
+    top:-51.5vh;
+    position:relative;
+}
+.topmenu3 a{
+    text-decoration:none;
+    font-size:14px;
+    color:black;
+    display:block;
+}
+.top{
+    width:93vw;
+    height:14vh;
+    top:1vh;
+    background-color:#41b3a3;
+    position:relative;
+    left:2.75vw;
+    z-index:-2;
+    outline-style:solid;
+}
+.sokruta{
+    position: absolute;
+    top:6vh;
+    left:39vw;
+    z-index:1;
+}
+.sok{
+    position: absolute;
+    width:40vw;
+    height:5vh;
+    outline-style:solid;
+    outline-width:1px;
+}
+.logga{
+    position:relative;
+    top:-12vh;
+    left:5vw;
+}
+.varukorg{
+    position:relative;
+    left:90vw;
+    top:-22vh;
+}
+.varukorg a{
+    height:40px;
+    width:40px;
+    display:block;
+    position:relative;
+}
+.varukorgimage{
+    height:40px;
+}
+.slideshow{
+    position:relative;
+    height:20vh;
+    z-index:2;
+    left:33vw;
+    top:-25vh;
+}
+.namn{
+    position:relative;
+    font-size:30px;
+    top:-31vh;
+    left:20vw;
+    width:10vw;
+}
+.mySlides{
+    outline-style:solid;
+}
+.text{
+    font-size:30px;
+    position:relative;
+    top:-57vh;
+    left:49vw;
+    z-index:3;
+    color:white;
+}
+/*
+.menubackground{
+    width:75vw;
+    height:5vh;
+    top:-45.8vh;
+    left:20.8vw;
+    position:relative;
+    outline-style:solid;
+    outline-width:1.5px;
+    background-color:#85dcbb;
+    z-index:-1;
+}*/
+.bakgrund{
+    width:75vw;
+    height:84.4vh;
+    background-color:#14a76c;
+    left:20.8vw;
+    top:-42.2vh;
+    position:relative;
+    outline-style:solid;
+}
+.h3{
+    background-color:#7395ae;
+    display:block;
+    width:18vw;
+    height:13vh;
+    top:-128.4vh;
+    position:relative;
+    left:3%;
+    outline-style:solid;
+    outline-width:1.5px;
+    line-height:225%;
+    padding-left:1%;
+}
+.meny{
+    width:18vw;
+    left:3%;
+    top:-130vh;
+    position:relative;
+}
+.meny a{
+    background-color:#55bcc9;
+    color:black;
+    display:block;
+    padding:12px;
+    text-decoration:none;
+    outline-style:solid;
+    outline-width:1px;
+}
+.meny a:hover{
+    background-color: #97caef;
+    color:black;
+}
+.meny a:active{
+    background-color:#97caef;
+    color:black;
+}
+.omoss{
+    font-size:24px;
+    left:2vw;
+    position:relative;
+}
+.omosstext{
+    position:relative;
+    top:2vw;
+    left:2vw;
+}
