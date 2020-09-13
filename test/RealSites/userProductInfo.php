@@ -10,7 +10,7 @@ if(!$_SESSION["Login"]){
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="CSS/TEST.css">
+    <link rel="stylesheet" href="CSS/USERproduktinfo.css">
     <title>Document</title>
 </head>
 <body>
@@ -32,13 +32,9 @@ if(!$_SESSION["Login"]){
             </div>
             <div class="menu">
                 <div class="buttons">
-                    <a class="loggain" href="Loggin.php"><h4>Logga in</h4></a>
+                    <a class="loggain" href="userProducts.php"><h4>Tillbaka</h4></a>
                 </div>
             </div>
-        </div>
-        <div class="kategorier">
-            <h2 class="text">Kategorier</h2>
-
         </div>
         <?php
 //variabler jag använde

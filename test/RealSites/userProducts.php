@@ -47,7 +47,7 @@
         </div>
         <ul class="breadcrumbs">
         <li><a href="mainpage.html">Startsida</a></li>
-        <li>Produktsida</li>
+        <li>Redigera</li>
     </ul>
         <div class="produkter">
             <div class="tom"></div>
