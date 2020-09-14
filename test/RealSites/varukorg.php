@@ -41,7 +41,7 @@
     <ul class="breadcrumbs">
         <li><a href="mainpage.html">Startsida</a></li>
         <li><a href="Productpage.html">Produktsida</a></li>
-        <li><a href="produktinfo.html">Carcassonne</a></li>
+        <li><a href="produktinfo.html">Produkt</a></li>
         <li>Varukorg</li>
     </ul>
         <div class="varukorg2">

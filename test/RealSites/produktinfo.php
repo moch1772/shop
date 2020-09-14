@@ -39,6 +39,7 @@
             <a href="Kategori.php?filter=Vuxna">Vuxenspel</a>
             <a href="Kategori.php?filter=Strategi">Strategispel</a>
         </div>
+        
         <div class="relaterade">
             <h5 class="reltext">Relaterade spel</h5>
         <?php
