@@ -11,8 +11,10 @@
 <body>
     <div class="content">
         <div class="meny">
-            <div class="logga">
+        <div class="logga">
+                <a href="mainpage.html">
                 <img src="img/logga.png" class="bild">
+                </a>
             </div>
             <div class="sokruta">
 
@@ -21,21 +23,21 @@
                 </form>
             </div>
             <div class="varukorg"><a href="varukorg.html"><img src="img/varukorg.png" class="varukorgimage"></a></div>
-            <div class="topmenu"><a href="test/Loggin.html">Logga in</a></div>
+            <div class="topmenu"><a href="Loggin.html">Logga in</a></div>
             <div class="topmenu2"><a href="omoss.html">Om oss</a></div>
             <div class="topmenu3"><a href="kontakt.html">Kontakta oss</a></div>
         </div>
         <h2 class="h2">Kategorier</h2>
         <div class="menu">
-            <a href="Productpage.html">Alla Brädspel</a>
-            <a href="Productpage.html">Dungeons and Dragons</a>
-            <a href="Productpage.html">Magic the Gathering</a>
-            <a href="Productpage.html">Kortspel</a>
-            <a href="Productpage.html">Pussel</a>
-            <a href="Productpage.html">Familjespel</a>
-            <a href="Productpage.html">Barnspel</a>
-            <a href="Productpage.html">Vuxenspel</a>
-            <a href="Productpage.html">Strategispel</a>
+        <a href="Productpage.php">Alla Brädspel</a>
+            <a href="Kategori.php?filter=Dnd">Dungeons and Dragons</a>
+            <a href="Kategori.php?filter=Mtg">Magic the Gathering</a>
+            <a href="Kategori.php?filter=Kortspel">Kortspel</a>
+            <a href="Kategori.php?filter=Pussel">Pussel</a>
+            <a href="Kategori.php?filter=Familj">Familjespel</a>
+            <a href="Kategori.php?filter=Barn">Barnspel</a>
+            <a href="Kategori.php?filter=Vuxna">Vuxenspel</a>
+            <a href="Kategori.php?filter=Strategi">Strategispel</a>
         </div>
         <div class="relaterade">
             <h5 class="reltext">Relaterade spel</h5>

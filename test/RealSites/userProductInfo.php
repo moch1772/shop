@@ -16,8 +16,10 @@ if(!$_SESSION["Login"]){
 <body>
     <div class="content">
         <div class="meny">
-            <div class="logga">
+        <div class="logga">
+                <a href="mainpage.html">
                 <img src="img/logga.png" class="bild">
+                </a>
             </div>
             <div class="sokruta">
 
@@ -30,13 +32,9 @@ if(!$_SESSION["Login"]){
             </div>
             <div class="menu">
                 <div class="buttons">
-                    <a class="loggain" href="Loggin.php"><h4>Logga in</h4></a>
+                    <a class="loggain" href="userProducts.php"><h4>Tillbaka</h4></a>
                 </div>
             </div>
-        </div>
-        <div class="kategorier">
-            <h2 class="text">Kategorier</h2>
-
         </div>
         <?php
 //variabler jag använde
