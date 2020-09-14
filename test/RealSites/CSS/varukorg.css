@@ -10,21 +10,21 @@
     height:14vh;
     width:92.98vw;
     margin-left:2.75vw;
-    margin-top:1vh;
+    margin-top:2.5vh;
     background-color: #41b3a3;
     outline-style: solid;
 }
 .logga{
     position: absolute;
-    margin-left:0%;
-    margin-top:1.2%;
+    margin-left:2.25vw;
+    margin-top:1vh;
 }
 .bild{
-    width:13%;
+    width:11.5%;
 }
 .sokruta{
     position: absolute;
-    margin-top:7vh;
+    margin-top:6vh;
     margin-left:39.7vw;
 }
 .sok{
@@ -32,11 +32,57 @@
     width:40vw;
     height:5vh;
 }
+.topmenu{
+    width:5vw;
+    height:5vh;
+    margin-left:70.24vw;
+    margin-top:-1.5vh;
+    position:relative;
+}
+.topmenu a{
+    text-decoration:none;
+    font-size:14px;
+    color:black;
+    display:block;
+}
+.topmenu2{
+    width:4.2vw;
+    height:5vh;
+    margin-left:78.25vw;
+    margin-top:-5vh;
+    position:relative;
+}
+.topmenu2 a{
+    text-decoration:none;
+    font-size:14px;
+    color:black;
+    display:block;
+}
+.topmenu3{
+    width:7.3vw;
+    height:5vh;
+    margin-left:85.25vw;
+    margin-top:-5vh;
+    position:relative;
+}
+.topmenu3 a{
+    text-decoration:none;
+    font-size:14px;
+    color:black;
+    display:block;
+}
 .varukorg{
     position: absolute;
-    margin-left:80vw;
-    margin-top:5vh;
-    font-size:100%;
+    margin-left:87.25vw;
+    margin-top:4.89vh;
+}
+.varukorg a{
+    height:1vh;
+    width:1vw;
+    display:block;
+}
+.varukorgimage{
+    height:690%;
 }
 .menu{
     width:18vw;
@@ -149,7 +195,7 @@ ul.breadcrumbs li+li:before{
 }
 .btn2{
     width:5vw;
-    height:3vh;
+    height:3.4vh;
     font-size: small;
     border:none;
     background-color:rgb(224, 184, 184);

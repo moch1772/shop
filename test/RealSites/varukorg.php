@@ -23,8 +23,13 @@
                 </form>
             </div>
             <div class="varukorg">
-                <h2>Varukorg</h2>
+                <a href="varukorg.php">
+                    <img src="img/varukorg.png" class="varukorgimage">
+                </a>
             </div>
+            <div class="topmenu"><a href="Loggin.php">Logga in</a></div>
+            <div class="topmenu2"><a href="omoss.html">Om oss</a></div>
+            <div class="topmenu3"><a href="kontakt.html">Kontakta oss</a></div>
         </div>
         <h2 class="h2">Kategorier</h2>
     <div class="menu">
