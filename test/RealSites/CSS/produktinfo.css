@@ -96,23 +96,6 @@
     text-align: left;
     padding-left: 0.9vw;
 }
-ul.breadcrumbs{
-    position: relative;
-    list-style:none;
-    margin-top:4%;
-    z-index: 10;
-}
-ul.breadcrumbs li{
-    float:left;
-    display: inline;
-    
-}
-ul.breadcrumbs li+li:before{
-    padding:4px;
-    color:black;
-    content: ">";
-
-}
 .menu{
     width:17.09vw;
     margin-left:2.68vw;
