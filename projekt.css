@@ -117,8 +117,8 @@ body{
 }
 .logga{
     position:relative;
-    top:-12vh;
-    left:5vw;
+    top:-10vh;
+    left:4vw;
 }
 .varukorg{
     position:relative;
@@ -155,7 +155,7 @@ body{
     font-size:30px;
     position:relative;
     top:-57vh;
-    left:49vw;
+    left:51vw;
     z-index:3;
     color:white;
 }
